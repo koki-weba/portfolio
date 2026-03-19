@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafes — KURO COFFEE TOKYO</title>
+  <meta name="description" content="KURO COFFEE TOKYOのカフェ店舗情報。清澄白河・表参道・渋谷の3店舗でお待ちしております。" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cafes.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">KURO COFFEE</span>
+        <span class="logo-sub">TOKYO</span>
+      </a>
+      <nav class="nav-menu" aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cafes.html">Cafes</a>
+        <a href="#">About</a>
+        <a href="#">Story</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="検索">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="カート">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cafes.html">Cafes</a>
+    <a href="#">About</a>
+    <a href="#">Story</a>
+  </nav>
+
+  <main>
+
+    <!-- ══ PAGE HERO ══ -->
+    <section class="cafes-hero">
+      <div class="cafes-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80');"></div>
+      <div class="cafes-hero-overlay"></div>
+      <div class="cafes-hero-content">
+        <nav class="breadcrumb" style="justify-content:center; margin-bottom:20px;">
+          <a href="index.html" style="color:rgba(255,255,255,0.7);">Home</a>
+          <span style="color:rgba(255,255,255,0.4);">/</span>
+          <span style="color:rgba(255,255,255,0.9);">Cafes</span>
+        </nav>
+        <h1>Our Cafes</h1>
+        <p>東京都内3店舗でお待ちしております</p>
+      </div>
+    </section>
+
+    <!-- ══ CAFE LIST ══ -->
+    <section class="section cafes-section">
+      <div class="container">
+
+        <!-- ─ Cafe 1: 清澄白河 ─ -->
+        <article class="cafe-card fade-in" id="kiyosumi">
+          <div class="cafe-images">
+            <div class="cafe-main-img">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80" alt="清澄白河本店 外観" loading="lazy" />
+            </div>
+            <div class="cafe-sub-imgs">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="清澄白河本店 内観" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="清澄白河本店 コーヒー" loading="lazy" />
+            </div>
+          </div>
+          <div class="cafe-info">
+            <div class="cafe-number">01</div>
+            <h2 class="cafe-name">清澄白河本店</h2>
+            <p class="cafe-name-en">Kiyosumi-Shirakawa Flagship</p>
+            <p class="cafe-desc">2018年創業の旗艦店。元倉庫を改装したインダストリアルな空間に、当店のロースタリーを併設しています。焙煎の香りが漂う中、職人が丁寧に淹れるコーヒーをお楽しみいただけます。</p>
+            <dl class="cafe-details">
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  住所
+                </dt>
+                <dd>東京都江東区平野3-2-XX<br>清澄白河駅 徒歩5分</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  営業時間
+                </dt>
+                <dd>月〜金 8:00〜19:00<br>土・日・祝 9:00〜18:00</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.4a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.67h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.06 6.06l1.39-1.39a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  電話
+                </dt>
+                <dd>03-XXXX-XXXX</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  定休日
+                </dt>
+                <dd>年中無休（年末年始を除く）</dd>
+              </div>
+            </dl>
+            <div class="cafe-tags">
+              <span>Roastery</span>
+              <span>Brew Bar</span>
+              <span>Retail</span>
+              <span>Wi-Fi</span>
+            </div>
+            <a href="#map-kiyosumi" class="btn btn-outline cafe-map-btn">地図を見る</a>
+          </div>
+        </article>
+
+        <!-- Map 1 -->
+        <div class="map-wrap fade-in" id="map-kiyosumi">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.1034839671285!2d139.79611381525627!3d35.67888298019768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601889566b4d9f79%3A0x38d0b07eebfb5f38!2z5riL5bCI55Sw5Y6f6aeF!5e0!3m2!1sja!2sjp!4v1710000000000"
+            width="100%"
+            height="360"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="清澄白河本店の地図"
+          ></iframe>
+        </div>
+
+        <hr class="cafe-divider" />
+
+        <!-- ─ Cafe 2: 表参道 ─ -->
+        <article class="cafe-card cafe-card-reverse fade-in" id="omotesando">
+          <div class="cafe-images">
+            <div class="cafe-main-img">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80" alt="表参道店" loading="lazy" />
+            </div>
+            <div class="cafe-sub-imgs">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80" alt="表参道店 内観" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&q=80" alt="表参道店 ドリンク" loading="lazy" />
+            </div>
+          </div>
+          <div class="cafe-info">
+            <div class="cafe-number">02</div>
+            <h2 class="cafe-name">表参道店</h2>
+            <p class="cafe-name-en">Omotesando</p>
+            <p class="cafe-desc">ケヤキ並木が続く表参道の一角に佇む、ミニマルで洗練された空間。シングルオリジンのコーヒーはもちろん、季節のドリンクメニューも充実しています。ショッピングの合間にぜひお立ち寄りください。</p>
+            <dl class="cafe-details">
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  住所
+                </dt>
+                <dd>東京都渋谷区神宮前4-XX-XX<br>表参道駅 徒歩3分</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  営業時間
+                </dt>
+                <dd>月〜金 8:00〜20:00<br>土・日・祝 9:00〜19:00</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.4a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.67h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.06 6.06l1.39-1.39a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  電話
+                </dt>
+                <dd>03-XXXX-XXXX</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  定休日
+                </dt>
+                <dd>年中無休</dd>
+              </div>
+            </dl>
+            <div class="cafe-tags">
+              <span>Brew Bar</span>
+              <span>Retail</span>
+              <span>Seasonal Menu</span>
+            </div>
+            <a href="#map-omotesando" class="btn btn-outline cafe-map-btn">地図を見る</a>
+          </div>
+        </article>
+
+        <!-- Map 2 -->
+        <div class="map-wrap fade-in" id="map-omotesando">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5835826938!2d139.71198631525673!3d35.66502048020086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca4bea4bee5%3A0xb3c5f9d55b765ab!2z6KGX5Y+W6YGU!5e0!3m2!1sja!2sjp!4v1710000001000"
+            width="100%"
+            height="360"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="表参道店の地図"
+          ></iframe>
+        </div>
+
+        <hr class="cafe-divider" />
+
+        <!-- ─ Cafe 3: 渋谷 ─ -->
+        <article class="cafe-card fade-in" id="shibuya">
+          <div class="cafe-images">
+            <div class="cafe-main-img">
+              <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=900&q=80" alt="渋谷スクランブル店" loading="lazy" />
+            </div>
+            <div class="cafe-sub-imgs">
+              <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=400&q=80" alt="渋谷店 内観" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="渋谷店 コーヒー" loading="lazy" />
+            </div>
+          </div>
+          <div class="cafe-info">
+            <div class="cafe-number">03</div>
+            <h2 class="cafe-name">渋谷スクランブル店</h2>
+            <p class="cafe-name-en">Shibuya Scramble</p>
+            <p class="cafe-desc">2026年2月グランドオープン。渋谷スクランブル交差点に近い立地で、日々都市の喧騒の中に静寂のひとときを提供しています。テイクアウト対応も充実しており、朝のコーヒーにも最適です。</p>
+            <dl class="cafe-details">
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  住所
+                </dt>
+                <dd>東京都渋谷区渋谷2-XX-XX<br>渋谷駅 徒歩3分</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  営業時間
+                </dt>
+                <dd>月〜日・祝 7:30〜21:00<br>（年中無休）</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.4a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.67h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10a16 16 0 0 0 6.06 6.06l1.39-1.39a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  電話
+                </dt>
+                <dd>03-XXXX-XXXX</dd>
+              </div>
+              <div class="cafe-detail-row">
+                <dt>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  定休日
+                </dt>
+                <dd>年中無休</dd>
+              </div>
+            </dl>
+            <div class="cafe-tags">
+              <span>Takeout</span>
+              <span>Retail</span>
+              <span>New Open</span>
+              <span>Wi-Fi</span>
+            </div>
+            <a href="#map-shibuya" class="btn btn-outline cafe-map-btn">地図を見る</a>
+          </div>
+        </article>
+
+        <!-- Map 3 -->
+        <div class="map-wrap fade-in" id="map-shibuya">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.668044286899!2d139.69974631525668!3d35.65910408020257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328f7a87aa50!2z5riL6LC35cLL5Zuc6Kq_5Lqk5rWB5omA!5e0!3m2!1sja!2sjp!4v1710000002000"
+            width="100%"
+            height="360"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="渋谷スクランブル店の地図"
+          ></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <section class="cafes-cta fade-in">
+      <div class="container cafes-cta-inner">
+        <div>
+          <h2>Visit Us Today</h2>
+          <p>お近くのKURO COFFEE TOKYOで、<br>丁寧に淹れた一杯をお楽しみください。</p>
+        </div>
+        <a href="products.html" class="btn btn-primary">オンラインで購入する</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-main">KURO COFFEE</span>
+            <span class="logo-sub">TOKYO</span>
+          </div>
+          <p>東京発、スペシャルティコーヒーの専門店。<br>産地直送のこだわりコーヒーをお届けします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">全商品</a></li>
+            <li><a href="products.html?cat=beans">コーヒー豆</a></li>
+            <li><a href="products.html?cat=drip">ドリップバッグ</a></li>
+            <li><a href="products.html?cat=gift">ギフト</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="cafes.html">Cafes</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">配送について</a></li>
+            <li><a href="#">返品ポリシー</a></li>
+            <li><a href="#">プライバシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 KURO COFFEE TOKYO. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

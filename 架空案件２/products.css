@@ -1,0 +1,329 @@
+/* ===========================
+   products.html — page-specific styles
+   =========================== */
+
+/* ── Page Hero ── */
+.products-hero {
+  background: var(--light-blue);
+  padding: 120px 0 48px;
+}
+
+.products-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 8px;
+}
+
+.products-hero p {
+  font-family: var(--font-jp);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+/* ── Layout ── */
+.products-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ── Sidebar ── */
+.products-sidebar {
+  position: sticky;
+  top: 88px;
+}
+
+.sidebar-section {
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.sidebar-title {
+  font-family: var(--font-en);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 14px;
+}
+
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  font-family: var(--font-jp);
+  font-size: 0.88rem;
+  color: var(--gray-700);
+  cursor: pointer;
+  border-radius: var(--radius);
+  text-align: left;
+  transition: all var(--transition);
+}
+
+.filter-btn span {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.filter-btn:hover {
+  background: var(--gray-100);
+  color: var(--black);
+}
+
+.filter-btn.active {
+  background: var(--black);
+  color: var(--white);
+}
+
+.filter-btn.active span {
+  color: rgba(255,255,255,0.65);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-jp);
+  font-size: 0.88rem;
+  color: var(--gray-700);
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.checkbox-label:hover {
+  background: var(--gray-100);
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--black);
+  cursor: pointer;
+}
+
+/* ── Products Area ── */
+.products-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.products-count {
+  font-family: var(--font-jp);
+  font-size: 0.85rem;
+  color: var(--gray-500);
+}
+
+.sort-select {
+  font-family: var(--font-jp);
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  background: var(--white);
+  color: var(--gray-700);
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a8a96' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.sort-select:focus {
+  outline: 1.5px solid var(--black);
+  border-color: var(--black);
+}
+
+.products-grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Product cards (reuse from style.css patterns) */
+.product-card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3/4;
+  background: var(--gray-100);
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+.product-wishlist {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--transition), background var(--transition);
+  color: var(--gray-700);
+  z-index: 2;
+}
+
+.product-card:hover .product-wishlist {
+  opacity: 1;
+}
+
+.product-wishlist:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+.product-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: var(--dark-blue);
+  color: var(--white);
+  font-family: var(--font-en);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+.product-badge.best {
+  background: var(--black);
+}
+
+.product-info {
+  padding: 14px 4px 4px;
+}
+
+.product-origin {
+  font-family: var(--font-en);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid-blue);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  font-family: var(--font-jp);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.product-note {
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-family: var(--font-en);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.product-price span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .products-layout {
+    grid-template-columns: 200px 1fr;
+    gap: 32px;
+  }
+
+  .products-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .products-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 24px;
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+
+  .products-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid-full {
+    grid-template-columns: 1fr;
+  }
+}

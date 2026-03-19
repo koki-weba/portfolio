@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ゲデブ ナチュラル — KURO COFFEE TOKYO</title>
+  <meta name="description" content="エチオピア ゲデブ ナチュラル。ブルーベリーのような果実感とジャスミンの香りが特徴的なライトロースト。" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product-detail.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">KURO COFFEE</span>
+        <span class="logo-sub">TOKYO</span>
+      </a>
+      <nav class="nav-menu" aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cafes.html">Cafes</a>
+        <a href="#">About</a>
+        <a href="#">Story</a>
+      </nav>
+      <div class="header-icons">
+        <button class="icon-btn" aria-label="検索">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="カート">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count">0</span>
+        </button>
+        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cafes.html">Cafes</a>
+    <a href="#">About</a>
+    <a href="#">Story</a>
+  </nav>
+
+  <main>
+
+    <div class="detail-page container">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="products.html">Products</a>
+        <span>/</span>
+        <span>ゲデブ ナチュラル</span>
+      </nav>
+
+      <!-- ══ PRODUCT MAIN ══ -->
+      <div class="product-detail-grid">
+
+        <!-- Left: Images -->
+        <div class="detail-images fade-in">
+          <div class="detail-main-img">
+            <img id="main-img" src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=900&q=80" alt="エチオピア ゲデブ ナチュラル" />
+            <span class="detail-badge">New Arrival</span>
+          </div>
+          <div class="detail-thumbs">
+            <button class="thumb active" onclick="changeImg(this, 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=900&q=80')">
+              <img src="https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?w=200&q=80" alt="" />
+            </button>
+            <button class="thumb" onclick="changeImg(this, 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=80')">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&q=80" alt="" />
+            </button>
+            <button class="thumb" onclick="changeImg(this, 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80')">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=200&q=80" alt="" />
+            </button>
+            <button class="thumb" onclick="changeImg(this, 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=80')">
+              <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=200&q=80" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Info -->
+        <div class="detail-info fade-in fade-in-delay-1">
+
+          <div class="detail-origin-badge">Ethiopia · Gedeb</div>
+          <h1 class="detail-title">ゲデブ ナチュラル</h1>
+          <p class="detail-roast">Light Roast</p>
+
+          <!-- Flavor notes -->
+          <div class="flavor-notes">
+            <span class="flavor-tag">ブルーベリー</span>
+            <span class="flavor-tag">ジャスミン</span>
+            <span class="flavor-tag">蜂蜜</span>
+          </div>
+
+          <!-- Price -->
+          <div class="detail-price-wrap">
+            <p class="detail-price">¥2,200</p>
+            <span class="detail-unit">/ 100g（税込）</span>
+          </div>
+
+          <!-- Description -->
+          <div class="detail-description">
+            <p>エチオピア南部のゲデブ地区で栽培された、高品質なヘアルームヴァラエティ種。標高2,000m以上の高地で育ち、ナチュラル精製によって豊かな果実感が生まれます。</p>
+            <p>カップには熟したブルーベリーのような甘みと、ジャスミンを思わせる華やかなフローラル感、後味に蜂蜜のような優しい甘さが広がります。スペシャルティコーヒーの醍醐味を存分に味わえる一品です。</p>
+          </div>
+
+          <!-- Specs -->
+          <dl class="detail-specs">
+            <div>
+              <dt>産地</dt>
+              <dd>エチオピア ゲデブ地区</dd>
+            </div>
+            <div>
+              <dt>精製方法</dt>
+              <dd>ナチュラル</dd>
+            </div>
+            <div>
+              <dt>品種</dt>
+              <dd>ヘアルーム</dd>
+            </div>
+            <div>
+              <dt>標高</dt>
+              <dd>2,000〜2,200m</dd>
+            </div>
+            <div>
+              <dt>ロースト</dt>
+              <dd>ライトロースト</dd>
+            </div>
+            <div>
+              <dt>内容量</dt>
+              <dd>100g</dd>
+            </div>
+          </dl>
+
+          <!-- Size select -->
+          <div class="detail-option">
+            <label class="option-label">サイズを選ぶ</label>
+            <div class="size-options">
+              <label class="size-radio">
+                <input type="radio" name="size" value="100g" checked />
+                <span>100g — ¥2,200</span>
+              </label>
+              <label class="size-radio">
+                <input type="radio" name="size" value="200g" />
+                <span>200g — ¥4,200</span>
+              </label>
+              <label class="size-radio">
+                <input type="radio" name="size" value="500g" />
+                <span>500g — ¥9,800</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Grind select -->
+          <div class="detail-option">
+            <label class="option-label" for="grind-select">挽き方を選ぶ</label>
+            <select id="grind-select" class="grind-select">
+              <option>ホールビーン（豆のまま）</option>
+              <option>粗挽き（フレンチプレス）</option>
+              <option>中挽き（ペーパーフィルター）</option>
+              <option>細挽き（エスプレッソ）</option>
+            </select>
+          </div>
+
+          <!-- Quantity + Cart -->
+          <div class="detail-cart-row">
+            <div class="qty-wrap">
+              <button class="qty-minus" aria-label="数量を減らす">−</button>
+              <input type="number" class="qty-input" value="1" min="1" max="99" aria-label="数量" />
+              <button class="qty-plus" aria-label="数量を増やす">+</button>
+            </div>
+            <button class="btn btn-primary add-to-cart-btn">カートに追加</button>
+          </div>
+
+          <!-- Sub actions -->
+          <div class="detail-sub-actions">
+            <button class="sub-action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              お気に入りに追加
+            </button>
+            <button class="sub-action-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              シェアする
+            </button>
+          </div>
+
+          <!-- Delivery note -->
+          <div class="delivery-note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>¥5,000以上のご注文で送料無料 · 通常2〜4営業日で発送</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══ PRODUCT TABS ══ -->
+      <div class="product-tabs fade-in">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="story">Story</button>
+          <button class="tab-btn" data-tab="brew">Brew Guide</button>
+          <button class="tab-btn" data-tab="farm">About the Farm</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="tab-story">
+            <div class="tab-inner">
+              <div class="tab-text">
+                <h3>The Story Behind This Cup</h3>
+                <p>ゲデブはエチオピア南部のゲデオ地帯に位置する地区で、コーヒーの発祥地といわれるエチオピアの中でも特に標高が高く、品質の高いコーヒーが生産されています。</p>
+                <p>私たちは現地の農家コープと直接取引を行い、農家の生活向上と持続可能な農業をサポートしています。このロットはコープの中でも特に品質が高く選ばれた農家によって収穫されました。</p>
+              </div>
+              <div class="tab-img">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="コーヒー農園" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab-brew">
+            <div class="brew-guide">
+              <div class="brew-step">
+                <span class="brew-num">01</span>
+                <div>
+                  <h4>お湯の温度</h4>
+                  <p>90〜93℃のお湯を使用。沸騰後1〜2分ほど冷ますのがベストです。</p>
+                </div>
+              </div>
+              <div class="brew-step">
+                <span class="brew-num">02</span>
+                <div>
+                  <h4>コーヒーの量</h4>
+                  <p>150mlに対してコーヒー12〜14g（約1.5杯分）を目安に。</p>
+                </div>
+              </div>
+              <div class="brew-step">
+                <span class="brew-num">03</span>
+                <div>
+                  <h4>蒸らし</h4>
+                  <p>最初に少量のお湯を注ぎ、30〜40秒間蒸らすことでコーヒーの風味を引き出します。</p>
+                </div>
+              </div>
+              <div class="brew-step">
+                <span class="brew-num">04</span>
+                <div>
+                  <h4>注湯</h4>
+                  <p>中心から外側へ円を描くように、3〜4回に分けてゆっくりと注いでください。総抽出時間は2分30秒〜3分が目安です。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab-farm">
+            <div class="tab-inner">
+              <div class="tab-text">
+                <h3>Gedeb Washing Station</h3>
+                <p>ゲデブウォッシングステーションは、エチオピア南部のゲデオ地帯に位置し、標高2,000〜2,200mの高地農家から集められたチェリーを精製しています。</p>
+                <p>ナチュラル精製では、完熟したチェリーをそのまま乾燥棚に広げ、3〜4週間かけてゆっくりと乾燥させます。この工程によって、果肉の甘みと風味がコーヒー豆に移行し、独特のフルーティーさが生まれます。</p>
+              </div>
+              <div class="tab-img">
+                <img src="https://images.unsplash.com/photo-1542181961-9590d0c79be8?w=600&q=80" alt="農園の風景" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══ RELATED PRODUCTS ══ -->
+    <section class="section related-section" style="background: var(--off-white);">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Related Products</h2>
+          <p class="section-subtitle">関連商品</p>
+        </div>
+        <div class="related-grid">
+          <a href="product-detail.html" class="product-card fade-in fade-in-delay-1">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&q=80" alt="イルガチェフェ" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <span class="product-origin">Ethiopia · Light Roast</span>
+              <h3 class="product-name">イルガチェフェ ウォッシュド</h3>
+              <p class="product-note">レモン / ピーチ / ローズ</p>
+              <p class="product-price">¥2,350 <span>/ 100g</span></p>
+            </div>
+          </a>
+          <a href="product-detail.html" class="product-card fade-in fade-in-delay-2">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&q=80" alt="コロンビア ウイラ" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <span class="product-origin">Colombia · Medium Roast</span>
+              <h3 class="product-name">ウイラ ウォッシュド</h3>
+              <p class="product-note">キャラメル / チョコレート / オレンジ</p>
+              <p class="product-price">¥1,980 <span>/ 100g</span></p>
+            </div>
+          </a>
+          <a href="product-detail.html" class="product-card fade-in fade-in-delay-3">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80" alt="ケニア AA" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <span class="product-origin">Kenya · Light Roast</span>
+              <h3 class="product-name">ケニア AA キリニャガ</h3>
+              <p class="product-note">ブラックカラント / トマト / ライム</p>
+              <p class="product-price">¥2,400 <span>/ 100g</span></p>
+            </div>
+          </a>
+          <a href="product-detail.html" class="product-card fade-in fade-in-delay-4">
+            <div class="product-img-wrap">
+              <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=500&q=80" alt="ドリップバッグ" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <span class="product-origin">Drip Bag · 10 pcs</span>
+              <h3 class="product-name">春のドリップバッグ 10袋</h3>
+              <p class="product-note">3種のシングルオリジン</p>
+              <p class="product-price">¥1,600 <span>/ set</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-main">KURO COFFEE</span>
+            <span class="logo-sub">TOKYO</span>
+          </div>
+          <p>東京発、スペシャルティコーヒーの専門店。<br>産地直送のこだわりコーヒーをお届けします。</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html">全商品</a></li>
+            <li><a href="products.html?cat=beans">コーヒー豆</a></li>
+            <li><a href="products.html?cat=drip">ドリップバッグ</a></li>
+            <li><a href="products.html?cat=gift">ギフト</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="cafes.html">Cafes</a></li>
+            <li><a href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">配送について</a></li>
+            <li><a href="#">返品ポリシー</a></li>
+            <li><a href="#">プライバシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 KURO COFFEE TOKYO. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function changeImg(btn, src) {
+      document.getElementById('main-img').src = src;
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

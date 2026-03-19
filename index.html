@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATO HARUTO PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-inner">
+            <p class="loader-text">SATO HARUTO</p>
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill" id="loaderBarFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="header-logo">SATO HARUTO</a>
+            <nav class="header-nav" id="headerNav">
+                <a href="#about" class="header-nav-link">About</a>
+                <a href="#service" class="header-nav-link">Service</a>
+                <a href="#works" class="header-nav-link">Works</a>
+                <a href="#contact" class="header-nav-link">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="メニュー">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="sp-menu" id="spMenu">
+        <nav class="sp-menu-nav">
+            <a href="#about" class="sp-menu-link">About</a>
+            <a href="#service" class="sp-menu-link">Service</a>
+            <a href="#works" class="sp-menu-link">Works</a>
+            <a href="#contact" class="sp-menu-link">Contact</a>
+        </nav>
+        <div class="sp-menu-social">
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <main class="main-content" id="mainContent">
+
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <div class="hero-text-block">
+                    <h1 class="hero-title">
+                        <span class="hero-line" data-delay="0">つくるものを通して、</span>
+                        <span class="hero-line" data-delay="1">想いを届ける。</span>
+                    </h1>
+                    <p class="hero-sub">Web Creator / Designer</p>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span class="hero-scroll-text">Scroll</span>
+                    <span class="hero-scroll-line"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="section-inner">
+                <h2 class="section-heading fade-in-up">About</h2>
+                <div class="about-content">
+                    <div class="about-image fade-in-up">
+                        <div class="about-image-wrapper">
+                            <img src="ill_12_s.png" alt="佐藤 陽翔" class="about-photo">
+                        </div>
+                    </div>
+                    <div class="about-text fade-in-up">
+                        <p class="about-name">佐藤 陽翔</p>
+                        <p class="about-role">Web Creator</p>
+                        <p class="about-description">
+                            Webサイトの企画・デザイン・コーディングを行っています。<br>
+                            使う人の視点を大切にし、目的を達成できるデザインと<br class="pc-only">
+                            心地よいインタラクションを追求しています。
+                        </p>
+                        <p class="about-description">
+                            つくるものを通して人と人がつながり、<br class="pc-only">
+                            新しい価値が生まれる。そんなお手伝いができればと考えています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section service" id="service">
+            <div class="section-inner">
+                <h2 class="section-heading fade-in-up">Service</h2>
+                <div class="service-grid">
+                    <div class="service-card fade-in-up">
+                        <span class="service-number">01</span>
+                        <h3 class="service-title">Direction</h3>
+                        <p class="service-label">ディレクション</p>
+                        <p class="service-desc">
+                            ヒアリングを通じて課題を整理し、目的に合った効果的なプランを設計します。制作の土台となる戦略づくりを丁寧に行います。
+                        </p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <span class="service-number">02</span>
+                        <h3 class="service-title">Design</h3>
+                        <p class="service-label">デザイン</p>
+                        <p class="service-desc">
+                            使う人が迷わず目的を達成できるデザインを心がけています。見た目だけでなく、体験の質を高めるUIを設計します。
+                        </p>
+                    </div>
+                    <div class="service-card fade-in-up">
+                        <span class="service-number">03</span>
+                        <h3 class="service-title">Coding</h3>
+                        <p class="service-label">コーディング</p>
+                        <p class="service-desc">
+                            デザインの意図を正確に再現し、適切なアニメーションやインタラクションでWebサイトの完成度を高めます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section works" id="works">
+            <div class="section-inner">
+                <h2 class="section-heading fade-in-up">Works</h2>
+                <div class="works-grid">
+                    <a href="#" class="works-item fade-in-up" data-src="../架空案件１/index.html">
+                        <div class="works-image">
+                            <div class="works-preview-wrap">
+                                <iframe class="works-preview-frame" src="../架空案件１/index.html" tabindex="-1" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                        <div class="works-info">
+                            <h3 class="works-title">架空美容室サイト制作</h3>
+                            <p class="works-category">Design / Coding</p>
+                        </div>
+                    </a>
+                    <a href="#" class="works-item fade-in-up" data-src="../架空案件２/index.html">
+                        <div class="works-image">
+                            <div class="works-preview-wrap">
+                                <iframe class="works-preview-frame" src="../架空案件２/index.html" tabindex="-1" scrolling="no"></iframe>
+                            </div>
+                        </div>
+                        <div class="works-info">
+                            <h3 class="works-title">架空ECサイト制作</h3>
+                            <p class="works-category">Design / Coding</p>
+                        </div>
+                    </a>
+                    <a href="#" class="works-item fade-in-up">
+                        <div class="works-image">
+                            <div class="works-image-placeholder">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="works-info">
+                            <h3 class="works-title"></h3>
+                            <p class="works-category"></p>
+                        </div>
+                    </a>
+                    <a href="#" class="works-item fade-in-up">
+                        <div class="works-image">
+                            <div class="works-image-placeholder">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="works-info">
+                            <h3 class="works-title"></h3>
+                            <p class="works-category"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="section-inner">
+                <h2 class="section-heading fade-in-up">Contact</h2>
+                <div class="contact-content fade-in-up">
+                    <p class="contact-text">
+                        お仕事のご相談やお見積もりなど、<br>
+                        お気軽にお問い合わせください。
+                    </p>
+                    <a href="mailto:hello@example.com" class="contact-button">
+                        <span>お問い合わせ</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#service">Service</a>
+                    <a href="#works">Works</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+                <p class="footer-copy">&copy; SATO HARUTO All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <div id="worksModal" class="works-modal">
+        <div class="works-modal-overlay"></div>
+        <div class="works-modal-inner">
+            <button class="works-modal-close" id="worksModalClose">×</button>
+            <iframe id="worksModalFrame" src="" class="works-modal-frame"></iframe>
+        </div>
+    </div>
+
+    <div id="chatbot-wrapper" class="chatbot-wrapper">
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="AIチャットを開く">
+            <svg class="chatbot-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg class="chatbot-icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <div id="chatbot-container" class="chatbot-container">
+            <iframe
+                src="https://udify.app/chatbot/moezKluHup107pzn"
+                style="width: 100%; height: 100%; border: none;"
+                allow="microphone">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hair Salon LUME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">LUME</a>
+      <button class="header__menu-btn" id="menuBtn" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="globalNav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#shopdata">Shop</a></li>
+          <li><a href="#contact" class="header__cta">予約する</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== FV ========== -->
+  <section class="fv" id="top">
+    <div class="fv__bg">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&auto=format&fit=crop&q=80" alt="Hair Salon LUME" />
+    </div>
+    <div class="fv__overlay"></div>
+    <div class="fv__content">
+      <p class="fv__sub">Tokyo · Minami-Aoyama</p>
+      <h1 class="fv__title">
+        <span>Hair Salon</span>
+        <em>LUME</em>
+      </h1>
+      <p class="fv__catch">光と影が交わる場所で、<br>あなただけの美しさを見つける。</p>
+      <a href="#about" class="fv__scroll">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">About</p>
+        <h2 class="section-title">サロンについて</h2>
+      </div>
+
+      <!-- タブ -->
+      <div class="tab-wrapper fade-in">
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="concept">Concept</button>
+          <button class="tab-btn" data-tab="philosophy">Philosophy</button>
+          <button class="tab-btn" data-tab="history">History</button>
+        </div>
+
+        <div class="tab-content active" id="tab-concept">
+          <div class="about__layout">
+            <div class="about__img">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=80" alt="サロン内観" />
+            </div>
+            <div class="about__text">
+              <h3>光のなかで輝くあなたへ</h3>
+              <p>LUMEはイタリア語で「光」を意味します。南青山の静かな路地に佇む当サロンは、自然光が差し込む白を基調とした空間で、お客様一人ひとりの個性と美しさを最大限に引き出します。</p>
+              <p>トレンドを押しつけるのではなく、お客様のライフスタイル・骨格・髪質を丁寧に分析し、その方だけに似合うスタイルをご提案します。</p>
+              <p>美容の技術だけでなく、心地よい会話と静謐な時間も大切に。訪れるたびに「また来たい」と思えるサロンであり続けます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-philosophy">
+          <div class="about__layout about__layout--reverse">
+            <div class="about__img">
+              <img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?w=800&auto=format&fit=crop&q=80" alt="ヘアスタイリング" />
+            </div>
+            <div class="about__text">
+              <h3>技術とケアの哲学</h3>
+              <p>LUMEでは、すべてのメニューにおいてダメージを最小限に抑えることを最優先としています。厳選されたオーガニック成分のトリートメントと、長年の経験に基づく繊細な施術で、髪本来の美しさを蘇らせます。</p>
+              <p>使用する薬剤はすべてパラベンフリー・硫酸塩フリーのラインを採用。地肌・環境ともに優しい選択を続けています。</p>
+              <p>また、施術後のホームケア指導にも力を入れており、サロンでの美しさを日常でも持続できるようサポートします。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-history">
+          <div class="about__timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2015</span>
+              <div class="timeline-body">
+                <h4>代表・黒田 凛 が渡仏</h4>
+                <p>パリのトップサロンにて3年間修業。ヨーロッパのカラー技術とミニマルデザインを習得。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2018</span>
+              <div class="timeline-body">
+                <h4>南青山に1号店オープン</h4>
+                <p>白を基調とした15席の小規模サロンとして開業。口コミのみで予約が埋まる人気店に。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2021</span>
+              <div class="timeline-body">
+                <h4>オーガニックラインの導入</h4>
+                <p>フランス発のオーガニックヘアケアブランドと提携し、地球と髪に優しいケアを実現。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-body">
+                <h4>リニューアルオープン</h4>
+                <p>完全個室スペースを増設し、よりプライベートな空間で施術を提供できる体制へ進化。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section class="menu section section--gray" id="menu">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Menu & Price</p>
+        <h2 class="section-title">メニュー・料金</h2>
+      </div>
+
+      <div class="menu__tables fade-in">
+        <div class="menu__block">
+          <h3 class="menu__block-title">Cut</h3>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td>カット（シャンプー・ブロー込み）</td>
+                <td>¥8,800</td>
+              </tr>
+              <tr>
+                <td>カット + トリートメント</td>
+                <td>¥12,100</td>
+              </tr>
+              <tr>
+                <td>前髪カット</td>
+                <td>¥2,200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu__block">
+          <h3 class="menu__block-title">Color</h3>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td>リタッチカラー</td>
+                <td>¥9,900〜</td>
+              </tr>
+              <tr>
+                <td>フルカラー</td>
+                <td>¥13,200〜</td>
+              </tr>
+              <tr>
+                <td>バレイヤージュ / グラデーション</td>
+                <td>¥18,700〜</td>
+              </tr>
+              <tr>
+                <td>イルミナカラー</td>
+                <td>¥15,400〜</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu__block">
+          <h3 class="menu__block-title">Perm</h3>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td>ナチュラルパーマ</td>
+                <td>¥15,400〜</td>
+              </tr>
+              <tr>
+                <td>デジタルパーマ</td>
+                <td>¥19,800〜</td>
+              </tr>
+              <tr>
+                <td>縮毛矯正</td>
+                <td>¥22,000〜</td>
+              </tr>
+              <tr>
+                <td>酸性ストレート</td>
+                <td>¥25,300〜</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="menu__block">
+          <h3 class="menu__block-title">Treatment</h3>
+          <table class="price-table">
+            <tbody>
+              <tr>
+                <td>オーガニックトリートメント（ショート）</td>
+                <td>¥4,400〜</td>
+              </tr>
+              <tr>
+                <td>オーガニックトリートメント（ロング）</td>
+                <td>¥7,700〜</td>
+              </tr>
+              <tr>
+                <td>ヘッドスパ（30分）</td>
+                <td>¥6,600</td>
+              </tr>
+              <tr>
+                <td>ヘッドスパ（60分）</td>
+                <td>¥11,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="menu__note fade-in">※料金はすべて税込表示です。髪の長さ・状態により変動する場合がございます。詳細はご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Features</p>
+        <h2 class="section-title">LUMEの強み</h2>
+      </div>
+
+      <div class="features__grid">
+        <div class="feature-card fade-in">
+          <div class="feature-card__img">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&auto=format&fit=crop&q=80" alt="カット" />
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__num">01</span>
+            <h3>精密カット</h3>
+            <p>骨格・髪質・生え癖を徹底分析し、スタイリングが楽な「再現性の高いカット」を追求。毎朝のセットが圧倒的に楽になります。</p>
+          </div>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__img">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&auto=format&fit=crop&q=80" alt="カラー" />
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__num">02</span>
+            <h3>透明感カラー</h3>
+            <p>イルミナカラー・スロウカラーをはじめとした最新薬剤で、ダメージを最小限に抑えながら透き通るような発色を実現します。</p>
+          </div>
+        </div>
+
+        <div class="feature-card fade-in">
+          <div class="feature-card__img">
+            <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?w=800&auto=format&fit=crop&q=80" alt="パーマ" />
+          </div>
+          <div class="feature-card__body">
+            <span class="feature-card__num">03</span>
+            <h3>やわらかパーマ</h3>
+            <p>デジタルパーマ・酸性パーマを駆使し、乾かすだけでサマになる自然なウェーブを表現。毎日のスタイリングをもっとシンプルに。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STAFF ========== -->
+  <section class="staff section section--gray" id="staff">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Staff</p>
+        <h2 class="section-title">スタッフ紹介</h2>
+      </div>
+
+      <!-- スタッフタブ -->
+      <div class="tab-wrapper fade-in" id="staffTabWrapper">
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="staff-rin">Rin</button>
+          <button class="tab-btn" data-tab="staff-kai">Kai</button>
+          <button class="tab-btn" data-tab="staff-yuki">Yuki</button>
+        </div>
+
+        <div class="tab-content active" id="tab-staff-rin">
+          <div class="staff-card">
+            <div class="staff-card__img">
+              <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&auto=format&fit=crop&q=80" alt="黒田 凛" />
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__role">Director / Stylist</p>
+              <h3 class="staff-card__name">黒田 凛 <span>Rin Kuroda</span></h3>
+              <p class="staff-card__message">「美しさとは、その人が最も自分らしく輝ける状態のことだと思っています。骨格・髪質・ライフスタイルに寄り添ったカットとカラーで、あなただけのスタイルをご提案します。」</p>
+              <ul class="staff-card__spec">
+                <li><span>得意メニュー</span>バレイヤージュ・骨格矯正カット</li>
+                <li><span>経歴</span>パリ留学後、南青山にLUMEを開業</li>
+                <li><span>資格</span>美容師免許・アロマテラピー検定1級</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-staff-kai">
+          <div class="staff-card">
+            <div class="staff-card__img">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&auto=format&fit=crop&q=80" alt="山田 海斗" />
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__role">Top Stylist</p>
+              <h3 class="staff-card__name">山田 海斗 <span>Kaito Yamada</span></h3>
+              <p class="staff-card__message">「デジタルパーマを使ったやわらかなウェーブが得意です。乾かすだけでサマになるスタイルで、毎日のスタイリング時間を短縮しましょう。男性のお客様も大歓迎です。」</p>
+              <ul class="staff-card__spec">
+                <li><span>得意メニュー</span>デジタルパーマ・メンズカット</li>
+                <li><span>経歴</span>有名サロンで10年のキャリアを経て入社</li>
+                <li><span>資格</span>美容師免許・ヘアカラーリスト認定</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-staff-yuki">
+          <div class="staff-card">
+            <div class="staff-card__img">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&auto=format&fit=crop&q=80" alt="田中 雪" />
+            </div>
+            <div class="staff-card__body">
+              <p class="staff-card__role">Colorist</p>
+              <h3 class="staff-card__name">田中 雪 <span>Yuki Tanaka</span></h3>
+              <p class="staff-card__message">「透明感のあるカラーと、ダメージレスな施術を追求しています。初めてカラーをされる方も、繰り返しカラーをされている方も、髪の状態に合った最適なメニューをご提案します。」</p>
+              <ul class="staff-card__spec">
+                <li><span>得意メニュー</span>イルミナカラー・縮毛矯正</li>
+                <li><span>経歴</span>美容専門学校卒業後、LUMEに入社</li>
+                <li><span>資格</span>美容師免許・オーガニックケア認定士</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SHOP DATA ========== -->
+  <section class="shopdata section" id="shopdata">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Shop Data</p>
+        <h2 class="section-title">店舗情報</h2>
+      </div>
+
+      <div class="shopdata__layout">
+        <div class="shopdata__info fade-in">
+          <table class="info-table">
+            <tbody>
+              <tr>
+                <th>サロン名</th>
+                <td>Hair Salon LUME（ルーメ）</td>
+              </tr>
+              <tr>
+                <th>住所</th>
+                <td>〒107-0062<br>東京都港区南青山3-XX-XX<br>LUMEビル 1F</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td><a href="tel:0312345678">03-1234-5678</a></td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>平日 10:00〜20:00<br>土日祝 9:00〜19:00</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>毎週火曜日・第3月曜日</td>
+              </tr>
+              <tr>
+                <th>アクセス</th>
+                <td>東京メトロ銀座線「表参道駅」A4出口より徒歩5分</td>
+              </tr>
+              <tr>
+                <th>駐車場</th>
+                <td>近隣にコインパーキングあり</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#contact" class="btn btn--primary">WEB予約はこちら</a>
+        </div>
+
+        <div class="shopdata__map fade-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.748485659601!2d139.72244431525875!3d35.66516128020084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca215e0a9f7%3A0x4a4e3af1c0bdb30d!2z5Y2X6Z2S5bGx!5e0!3m2!1sja!2sjp!4v1620000000000!5m2!1sja!2sjp"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Hair Salon LUME 地図"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section section--dark" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label" style="color:#999;">Reservation</p>
+        <h2 class="section-title" style="color:#fff;">ご予約・お問い合わせ</h2>
+      </div>
+      <div class="contact__inner fade-in">
+        <p class="contact__lead">初回カウンセリングは無料です。お気軽にご相談ください。</p>
+        <div class="contact__btns">
+          <a href="tel:0312345678" class="btn btn--outline">お電話でのご予約</a>
+          <a href="#" class="btn btn--white">WEBフォームから予約</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#top" class="footer__logo">LUME</a>
+      <nav class="footer__nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Features</a>
+        <a href="#staff">Staff</a>
+        <a href="#shopdata">Shop</a>
+      </nav>
+      <p class="footer__copy">&copy; 2024 Hair Salon LUME. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
