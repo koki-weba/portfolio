@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>光整骨院（ひかりせいこついん）｜大阪市北区</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="#top">
+          <span class="header__logo-jp">光整骨院</span>
+          <span class="header__logo-sub">HIKARI SEIKOTSUIN</span>
+        </a>
+      </div>
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#about">当院について</a></li>
+          <li><a href="#menu">施術メニュー</a></li>
+          <li><a href="#flow">施術の流れ</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#contact" class="header__nav-contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="header__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="header__info-bar">
+      <span class="header__info-item"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>06-1234-5678</span>
+      <span class="header__info-item"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>大阪市北区</span>
+      <span class="header__info-item">平日21時まで診療</span>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero__slider">
+      <div class="hero__slide hero__slide--1 is-active"></div>
+      <div class="hero__slide hero__slide--2"></div>
+      <div class="hero__slide hero__slide--3"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__catch-en fade-up">YOUR BODY. YOUR LIFE.</p>
+      <h1 class="hero__title fade-up">
+        <span>痛みの根本から</span>
+        <span>あなたの健康を</span>
+        <span>取り戻す。</span>
+      </h1>
+      <p class="hero__sub fade-up">大阪市北区の光整骨院 ｜ 骨盤矯正・猫背矯正・交通事故治療</p>
+      <div class="hero__btns fade-up">
+        <a href="#contact" class="btn btn--primary">無料相談はこちら</a>
+        <a href="#menu" class="btn btn--outline">施術メニュー</a>
+      </div>
+    </div>
+    <div class="hero__dots">
+      <button class="hero__dot is-active" data-index="0"></button>
+      <button class="hero__dot" data-index="1"></button>
+      <button class="hero__dot" data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- ===== PICKUP ===== -->
+  <section class="pickup">
+    <div class="pickup__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">PICK UP</span>
+        <h2 class="section-header__ja">こんなお悩みありませんか？</h2>
+      </div>
+      <div class="pickup__grid">
+        <article class="pickup__card fade-up">
+          <div class="pickup__card-icon">
+            <svg viewBox="0 0 64 64"><circle cx="32" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 40c0-8 5.4-14 12-14s12 6 12 14v8H20v-8z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M16 56c0-4 7.2-7 16-7s16 3 16 7" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <span class="pickup__card-label">PICK UP!</span>
+          <h3>慢性的な腰痛・肩こり</h3>
+          <p>問診から精密な検査まで、痛みの根本原因を徹底的に追求します。痛みが出ている部位だけでなく、体全体のバランスを見直し、再発しにくい体へと導きます。</p>
+          <a href="#menu" class="pickup__card-link">詳しく見る <span>→</span></a>
+        </article>
+        <article class="pickup__card fade-up" style="transition-delay:.12s">
+          <div class="pickup__card-icon">
+            <svg viewBox="0 0 64 64"><path d="M32 8c-8 0-14 6-14 14 0 5 2.5 9.5 6.5 12L22 56h20l-2.5-22C43.5 31.5 46 27 46 22c0-8-6-14-14-14z" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="26" y1="38" x2="38" y2="38" stroke="currentColor" stroke-width="2"/><line x1="27" y1="44" x2="37" y2="44" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <span class="pickup__card-label">PICK UP!</span>
+          <h3>猫背矯正・姿勢改善</h3>
+          <p>背骨・骨盤の歪みを正し、全身の骨格と筋肉のバランスを整えます。日常の悪習慣から生まれた猫背を、根本から改善するプログラムをご提案します。</p>
+          <a href="#menu" class="pickup__card-link">詳しく見る <span>→</span></a>
+        </article>
+        <article class="pickup__card fade-up" style="transition-delay:.24s">
+          <div class="pickup__card-icon">
+            <svg viewBox="0 0 64 64"><ellipse cx="32" cy="30" rx="14" ry="18" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M22 48c0 5 4.5 8 10 8s10-3 10-8" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M18 30c-4-2-6-6-6-10 0-5 4-9 8-9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M46 30c4-2 6-6 6-10 0-5-4-9-8-9" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <span class="pickup__card-label">PICK UP!</span>
+          <h3>産後骨盤矯正</h3>
+          <p>出産後に緩んだ骨盤をしっかりと整え、産後太りや腰痛を改善します。お子様連れでも安心してご来院いただけるキッズスペースを完備しています。</p>
+          <a href="#menu" class="pickup__card-link">詳しく見る <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="news" id="news">
+    <div class="news__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">NEWS</span>
+        <h2 class="section-header__ja">お知らせ</h2>
+      </div>
+      <div class="news__tabs fade-up">
+        <button class="news__tab is-active" data-tab="all">新着情報</button>
+        <button class="news__tab" data-tab="info">お知らせ</button>
+        <button class="news__tab" data-tab="blog">ブログ</button>
+      </div>
+      <ul class="news__list fade-up">
+        <li class="news__item" data-category="info">
+          <time class="news__date">2026.04.15</time>
+          <span class="news__badge news__badge--info">お知らせ</span>
+          <a class="news__title" href="#">ゴールデンウィーク中の診療スケジュールについて</a>
+        </li>
+        <li class="news__item" data-category="info">
+          <time class="news__date">2026.04.10</time>
+          <span class="news__badge news__badge--info">お知らせ</span>
+          <a class="news__title" href="#">マイナ保険証の対応を開始しました</a>
+        </li>
+        <li class="news__item" data-category="blog">
+          <time class="news__date">2026.04.05</time>
+          <span class="news__badge news__badge--blog">ブログ</span>
+          <a class="news__title" href="#">春の季節に増える「ぎっくり腰」の原因と予防法</a>
+        </li>
+        <li class="news__item" data-category="info">
+          <time class="news__date">2026.03.20</time>
+          <span class="news__badge news__badge--info">お知らせ</span>
+          <a class="news__title" href="#">産後骨盤矯正プログラム　初回特典キャンペーン実施中</a>
+        </li>
+        <li class="news__item" data-category="blog">
+          <time class="news__date">2026.03.10</time>
+          <span class="news__badge news__badge--blog">ブログ</span>
+          <a class="news__title" href="#">デスクワーカーに多い「ストレートネック」を改善する方法</a>
+        </li>
+        <li class="news__item" data-category="info">
+          <time class="news__date">2026.02.28</time>
+          <span class="news__badge news__badge--info">お知らせ</span>
+          <a class="news__title" href="#">交通事故治療について、お気軽にご相談ください</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about__inner container">
+      <div class="about__text fade-up">
+        <div class="section-header section-header--left">
+          <span class="section-header__en">ABOUT</span>
+          <h2 class="section-header__ja">当院について</h2>
+        </div>
+        <div class="about__director">
+          <div class="about__director-img">
+            <div class="about__director-img-placeholder">
+              <svg viewBox="0 0 80 80"><circle cx="40" cy="28" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 72c0-15.5 12.5-28 28-28s28 12.5 28 28" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+          </div>
+          <div class="about__director-info">
+            <span class="about__director-role">院長 / 柔道整復師</span>
+            <span class="about__director-name">田中 康太</span>
+            <span class="about__director-career">施術実績 のべ 98,000人以上</span>
+          </div>
+        </div>
+        <p class="about__desc">光整骨院は「痛みの根本から解決する」をモットーに、患者様一人ひとりの体と向き合う整骨院です。施術歴17年以上の院長をはじめ、経験豊富なスタッフが丁寧な問診と精密な検査で、痛みの真の原因を見つけ出します。</p>
+        <p class="about__desc">症状が悪化してからではなく、未然に防ぐ「予防医療」の視点から、皆様の健康で快適な日常生活をサポートします。「あなたに来てよかった」と感じていただける院を目指しています。</p>
+        <div class="about__symptoms">
+          <h4>対応できる症状</h4>
+          <div class="about__symptoms-tags">
+            <span>肩こり</span><span>腰痛</span><span>頭痛</span><span>めまい</span>
+            <span>猫背</span><span>骨盤矯正</span><span>産後太り</span><span>むくみ</span>
+            <span>しびれ</span><span>五十肩</span><span>スポーツ外傷</span><span>交通事故</span>
+            <span>捻挫</span><span>ぎっくり腰</span><span>冷え性</span><span>O脚矯正</span>
+          </div>
+        </div>
+      </div>
+      <div class="about__image fade-up" style="transition-delay:.15s">
+        <div class="about__image-wrap">
+          <div class="about__image-main">
+            <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="500" fill="#fdf0f4"/>
+              <rect x="40" y="60" width="320" height="200" rx="8" fill="#e8b0c0" opacity=".6"/>
+              <rect x="60" y="80" width="120" height="160" rx="4" fill="#c8788e" opacity=".5"/>
+              <rect x="200" y="80" width="140" height="160" rx="4" fill="#c8788e" opacity=".5"/>
+              <rect x="40" y="290" width="320" height="160" rx="8" fill="#e8b0c0" opacity=".4"/>
+              <circle cx="200" cy="400" r="50" fill="#b5607a" opacity=".3"/>
+              <text x="200" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#b5607a">院内イメージ</text>
+            </svg>
+          </div>
+          <div class="about__image-sub">
+            <div class="about__image-sub-item">
+              <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="150" fill="#fdf0f4"/>
+                <circle cx="100" cy="75" r="40" fill="#c8788e" opacity=".4"/>
+                <text x="100" y="79" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#b5607a">施術スペース</text>
+              </svg>
+            </div>
+            <div class="about__image-sub-item">
+              <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <rect width="200" height="150" fill="#f5f0f7"/>
+                <rect x="30" y="30" width="140" height="90" rx="6" fill="#a89ec8" opacity=".35"/>
+                <text x="100" y="79" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7a6e9e">キッズルーム</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="17">0</span>
+            <span class="about__stat-unit">年</span>
+            <span class="about__stat-label">施術歴</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="98000">0</span>
+            <span class="about__stat-unit">人</span>
+            <span class="about__stat-label">施術実績</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-num" data-count="8">0</span>
+            <span class="about__stat-unit">項目</span>
+            <span class="about__stat-label">初回検査</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAUSE ===== -->
+  <section class="cause">
+    <div class="cause__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">CAUSE</span>
+        <h2 class="section-header__ja">痛みの原因はどこにある？</h2>
+      </div>
+      <p class="cause__lead fade-up">体の痛みや不調のほとんどは、骨格の歪みやねじれ、筋力の低下によるバランスの悪さが根本原因です。</p>
+      <div class="cause__grid">
+        <div class="cause__card fade-up">
+          <div class="cause__card-icon cause__card-icon--1">
+            <svg viewBox="0 0 48 48"><path d="M24 4a20 20 0 100 40A20 20 0 0024 4zm0 8a8 8 0 110 16A8 8 0 0124 12z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 38c0-4 5.4-7 12-7s12 3 12 7" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <span class="cause__card-badge">CHECK!</span>
+          <h3>日常生活のクセ</h3>
+          <p>スマホの長時間操作、片側のみへのバッグ掛け、足を組む習慣など、日常のちょっとしたクセが骨盤や背骨の歪みを引き起こします。</p>
+        </div>
+        <div class="cause__card fade-up" style="transition-delay:.1s">
+          <div class="cause__card-icon cause__card-icon--2">
+            <svg viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><rect x="16" y="8" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="24" y1="36" x2="24" y2="44" stroke="currentColor" stroke-width="2"/><line x1="16" y1="44" x2="32" y2="44" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <span class="cause__card-badge">CHECK!</span>
+          <h3>デスクワーク・お仕事</h3>
+          <p>長時間の前傾姿勢や、パソコン作業による首への負担が慢性的な肩こり・頸部痛の原因に。正しい座り方の指導も行っています。</p>
+        </div>
+        <div class="cause__card fade-up" style="transition-delay:.2s">
+          <div class="cause__card-icon cause__card-icon--3">
+            <svg viewBox="0 0 48 48"><ellipse cx="24" cy="22" rx="10" ry="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 36c0 5.5 4.5 8 10 8s10-2.5 10-8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 24c-3-1.5-4.5-4.5-4.5-7.5C5.5 11.5 9 8 13 8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M38 24c3-1.5 4.5-4.5 4.5-7.5C42.5 11.5 39 8 35 8" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <span class="cause__card-badge">CHECK!</span>
+          <h3>妊娠・出産後</h3>
+          <p>出産時に大きく開いた骨盤は、適切なケアなしには戻りにくくなります。産後の早期骨盤矯正が、産後太りや腰痛予防の鍵です。</p>
+        </div>
+        <div class="cause__card fade-up" style="transition-delay:.3s">
+          <div class="cause__card-icon cause__card-icon--4">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 28l-4 12M34 28l4 12M16 48h16" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 28c0-6 4.5-10 10-10s10 4 10 10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <span class="cause__card-badge">CHECK!</span>
+          <h3>スポーツ・運動</h3>
+          <p>繰り返すスポーツ動作や不適切なフォームが、肩・肘・膝などの関節に負担をかけます。歪みのある体でのスポーツは怪我のリスクも増大します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="menu" id="menu">
+    <div class="menu__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">MENU</span>
+        <h2 class="section-header__ja">施術メニュー</h2>
+      </div>
+      <div class="menu__tabs fade-up">
+        <button class="menu__tab is-active" data-mtab="jifee">自費診療</button>
+        <button class="menu__tab" data-mtab="hoken">保険診療</button>
+        <button class="menu__tab" data-mtab="women">女性メニュー</button>
+      </div>
+      <div class="menu__panels">
+        <div class="menu__panel is-active" data-mpanel="jifee">
+          <div class="menu__grid">
+            <div class="menu__item fade-up">
+              <div class="menu__item-num">01</div>
+              <h3>骨盤矯正・背骨矯正</h3>
+              <p>歪んだ骨盤・背骨を正しい位置に整え、痛みの根本原因にアプローチします。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.08s">
+              <div class="menu__item-num">02</div>
+              <h3>猫背矯正</h3>
+              <p>背骨のカーブを正し、筋力トレーニングと組み合わせた根本改善プログラムです。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.16s">
+              <div class="menu__item-num">03</div>
+              <h3>O脚・X脚矯正</h3>
+              <p>膝や股関節のバランスを整え、美しい脚のラインへ導く矯正施術です。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.24s">
+              <div class="menu__item-num">04</div>
+              <h3>腰痛・肩こり治療</h3>
+              <p>慢性的な痛みの根本原因を検査で特定し、オーダーメイドの治療プランを提案します。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.32s">
+              <div class="menu__item-num">05</div>
+              <h3>冷え性・倦怠感改善</h3>
+              <p>血行促進と自律神経バランスの調整で、慢性的なだるさや冷えを改善します。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.40s">
+              <div class="menu__item-num">06</div>
+              <h3>酸素ボックス</h3>
+              <p>高濃度酸素環境で疲労回復・免疫力アップ。1回30分 ¥1,100（税込）</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__panel" data-mpanel="hoken">
+          <div class="menu__grid">
+            <div class="menu__item fade-up">
+              <div class="menu__item-num">01</div>
+              <h3>骨折・脱臼・打撲</h3>
+              <p>各種保険適用。応急処置から回復まで、丁寧にサポートします。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.08s">
+              <div class="menu__item-num">02</div>
+              <h3>捻挫・挫傷</h3>
+              <p>スポーツ中の捻挫・挫傷に対応。早期回復を目指した施術を行います。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.16s">
+              <div class="menu__item-num">03</div>
+              <h3>スポーツ外傷</h3>
+              <p>競技への早期復帰を目指し、機能回復と再発予防まで一貫してサポートします。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.24s">
+              <div class="menu__item-num">04</div>
+              <h3>交通事故治療</h3>
+              <p>むち打ち・後遺症など、交通事故後の症状に専門的に対応します。自賠責保険適用。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.32s">
+              <div class="menu__item-num">05</div>
+              <h3>労働災害</h3>
+              <p>仕事中のケガに対応。労災保険を使用した施術が可能です。</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu__panel" data-mpanel="women">
+          <div class="menu__grid">
+            <div class="menu__item fade-up">
+              <div class="menu__item-num">01</div>
+              <h3>産後骨盤矯正</h3>
+              <p>出産後の骨盤の歪みを整え、産後太りや腰痛を根本から改善します。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.08s">
+              <div class="menu__item-num">02</div>
+              <h3>マタニティ整体</h3>
+              <p>妊娠中の腰痛・骨盤の不快感に優しく対応。安心の施術環境をご提供します。</p>
+            </div>
+            <div class="menu__item fade-up" style="transition-delay:.16s">
+              <div class="menu__item-num">03</div>
+              <h3>姿勢改善プログラム</h3>
+              <p>妊娠・出産で崩れた体型・姿勢を根本から整える6回完結プログラムです。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMISE ===== -->
+  <section class="promise">
+    <div class="promise__bg"></div>
+    <div class="promise__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">PROMISE</span>
+        <h2 class="section-header__ja">光整骨院の3つのお約束</h2>
+      </div>
+      <div class="promise__grid">
+        <div class="promise__card fade-up">
+          <div class="promise__card-circle">
+            <span class="promise__card-num">01</span>
+            <p class="promise__card-short">癒しの空間<br>の提供</p>
+          </div>
+          <h3>心地よく清潔な院内環境</h3>
+          <p>落ち着いたナチュラルカラーと間接照明で包まれた、清潔感あふれる癒しの空間。「整理・整頓・清潔・清掃・躾」の5Sを徹底し、いつ来ても気持ちよく過ごしていただける環境をご提供します。</p>
+        </div>
+        <div class="promise__card fade-up" style="transition-delay:.12s">
+          <div class="promise__card-circle">
+            <span class="promise__card-num">02</span>
+            <p class="promise__card-short">わかりやすい<br>説明</p>
+          </div>
+          <h3>丁寧な検査と分かりやすい説明</h3>
+          <p>問診から精密検査まで徹底的に行い、なぜ痛みが出ているのかを患者様自身に理解していただけるよう、図解を用いて分かりやすくご説明します。納得いただいたうえで施術に移ります。</p>
+        </div>
+        <div class="promise__card fade-up" style="transition-delay:.24s">
+          <div class="promise__card-circle">
+            <span class="promise__card-num">03</span>
+            <p class="promise__card-short">痛みの出ない<br>体づくり</p>
+          </div>
+          <h3>予防に特化した再発防止治療</h3>
+          <p>一時的な痛みの除去だけでなく、再発させない体づくりが治療の完了です。電気治療器を活用した筋力トレーニングで、自宅でも続けられる簡単なエクササイズをお伝えします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLOW ===== -->
+  <section class="flow" id="flow">
+    <div class="flow__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">FLOW</span>
+        <h2 class="section-header__ja">施術の流れ</h2>
+      </div>
+      <div class="flow__steps">
+        <div class="flow__step fade-up">
+          <div class="flow__step-num">STEP 01</div>
+          <div class="flow__step-icon">
+            <svg viewBox="0 0 48 48"><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm2 30h-4V22h4v12zm0-16h-4v-4h4v4z" fill="currentColor" opacity=".15"/><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm2 30h-4V22h4v12zm0-16h-4v-4h4v4z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>問診・ヒアリング</h3>
+          <p>プライベートな個室にて、症状・生活習慣・お仕事内容など、丁寧にお話を伺います。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step fade-up" style="transition-delay:.1s">
+          <div class="flow__step-num">STEP 02</div>
+          <div class="flow__step-icon">
+            <svg viewBox="0 0 48 48"><rect x="8" y="4" width="32" height="40" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><line x1="14" y1="14" x2="34" y2="14" stroke="currentColor" stroke-width="2"/><line x1="14" y1="22" x2="34" y2="22" stroke="currentColor" stroke-width="2"/><line x1="14" y1="30" x2="26" y2="30" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>精密検査（8項目）</h3>
+          <p>脊骨・骨盤の歪みを8項目にわたり徹底チェック。数値とビジュアルで体の状態を把握します。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step fade-up" style="transition-delay:.2s">
+          <div class="flow__step-num">STEP 03</div>
+          <div class="flow__step-icon">
+            <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 24l6 6 10-12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>治療プラン提案</h3>
+          <p>検査結果をもとに、最適な治療プランをご説明。期間・回数・費用についても明確にお伝えします。</p>
+        </div>
+        <div class="flow__arrow">→</div>
+        <div class="flow__step fade-up" style="transition-delay:.3s">
+          <div class="flow__step-num">STEP 04</div>
+          <div class="flow__step-icon">
+            <svg viewBox="0 0 48 48"><path d="M36 8H12a4 4 0 00-4 4v24a4 4 0 004 4h24a4 4 0 004-4V12a4 4 0 00-4-4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 24c2 3 4 5 6 5s4-5 6-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="18" r="2" fill="currentColor"/><circle cx="28" cy="18" r="2" fill="currentColor"/></svg>
+          </div>
+          <h3>施術・トレーニング</h3>
+          <p>納得いただいた後、施術を開始。矯正後は再発防止のためのホームトレーニング指導も行います。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLINIC INFO ===== -->
+  <section class="clinic" id="access">
+    <div class="clinic__inner container">
+      <div class="section-header fade-up">
+        <span class="section-header__en">CLINIC INFO</span>
+        <h2 class="section-header__ja">院情報・アクセス</h2>
+      </div>
+      <div class="clinic__layout">
+        <div class="clinic__info fade-up">
+          <table class="clinic__table">
+            <tbody>
+              <tr>
+                <th>院名</th>
+                <td>光整骨院（ひかりせいこついん）</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>〒530-0047<br>大阪府大阪市北区西天満3丁目5-6</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td><a href="tel:0612345678">06-1234-5678</a></td>
+              </tr>
+              <tr>
+                <th>診療時間</th>
+                <td>
+                  <div class="clinic__hours">
+                    <div class="clinic__hours-row">
+                      <span>月・火・木・金</span>
+                      <span>9:00〜14:00 / 16:00〜21:00</span>
+                    </div>
+                    <div class="clinic__hours-row">
+                      <span>土曜日</span>
+                      <span>9:00〜14:00 / 16:00〜19:00</span>
+                    </div>
+                    <div class="clinic__hours-row">
+                      <span>日曜日</span>
+                      <span>9:00〜13:00</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>休診日</th>
+                <td>水曜日・祝日</td>
+              </tr>
+              <tr>
+                <th>駐車場</th>
+                <td>あり（院前に3台）</td>
+              </tr>
+              <tr>
+                <th>アクセス</th>
+                <td>
+                  地下鉄谷町線「南森町駅」徒歩3分<br>
+                  JR東西線「大阪天満宮駅」徒歩5分
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="clinic__hours-table fade-up">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th><th>日</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>午前<br><small>9〜14時</small></th>
+                  <td>○</td><td>○</td><td class="closed">×</td><td>○</td><td>○</td><td>○</td><td>○</td>
+                </tr>
+                <tr>
+                  <th>午後<br><small>16〜21時</small></th>
+                  <td>○</td><td>○</td><td class="closed">×</td><td>○</td><td>○</td><td>△</td><td class="closed">×</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="clinic__hours-note">△：土曜午後は16:00〜19:00まで</p>
+          </div>
+        </div>
+        <div class="clinic__map fade-up" style="transition-delay:.15s">
+          <div class="clinic__map-placeholder">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#e8ede8"/>
+              <rect x="0" y="130" width="400" height="20" fill="#ccc" opacity=".7"/>
+              <rect x="160" y="0" width="20" height="300" fill="#ccc" opacity=".7"/>
+              <rect x="50" y="50" width="80" height="60" rx="3" fill="#b0b8b0" opacity=".6"/>
+              <rect x="240" y="40" width="100" height="70" rx="3" fill="#b0b8b0" opacity=".6"/>
+              <rect x="60" y="180" width="70" height="80" rx="3" fill="#b0b8b0" opacity=".6"/>
+              <rect x="270" y="190" width="90" height="70" rx="3" fill="#b0b8b0" opacity=".6"/>
+              <circle cx="200" cy="140" r="16" fill="#4a9e7e"/>
+              <circle cx="200" cy="140" r="8" fill="white"/>
+              <text x="200" y="270" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#555">光整骨院 MAP</text>
+            </svg>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="clinic__map-link btn btn--outline">Google マップで見る</a>
+          <div class="clinic__kids">
+            <div class="clinic__kids-icon">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 28c0-4.4 3.6-8 8-8s8 3.6 8 8v12H16V28z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="18" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <p><strong>キッズスペース完備</strong><br>お子様連れでも安心してご来院いただけます。施術中はスタッフがお子様をお預かりします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="cta__inner container">
+      <div class="cta__content fade-up">
+        <span class="cta__en">CONTACT</span>
+        <h2 class="cta__title">気軽にご相談ください</h2>
+        <p class="cta__sub">あなたの痛みと向き合い、根本から解決します</p>
+        <div class="cta__tel">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.5 11.5 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
+          <a href="tel:0612345678">06-1234-5678</a>
+        </div>
+        <p class="cta__hours">平日21時まで診療 ｜ 各種保険取扱 ｜ 駐車場完備</p>
+        <form class="cta__form" id="contactForm">
+          <div class="cta__form-row">
+            <div class="cta__form-group">
+              <label for="name">お名前 <span>必須</span></label>
+              <input type="text" id="name" placeholder="山田 太郎" required />
+            </div>
+            <div class="cta__form-group">
+              <label for="tel">電話番号 <span>必須</span></label>
+              <input type="tel" id="tel" placeholder="06-0000-0000" required />
+            </div>
+          </div>
+          <div class="cta__form-row">
+            <div class="cta__form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" placeholder="example@mail.com" />
+            </div>
+            <div class="cta__form-group">
+              <label for="symptom">お悩みの症状</label>
+              <select id="symptom">
+                <option value="">選択してください</option>
+                <option>腰痛・ぎっくり腰</option>
+                <option>肩こり・首こり</option>
+                <option>骨盤矯正</option>
+                <option>産後骨盤矯正</option>
+                <option>猫背矯正</option>
+                <option>スポーツ外傷</option>
+                <option>交通事故</option>
+                <option>その他</option>
+              </select>
+            </div>
+          </div>
+          <div class="cta__form-group cta__form-group--full">
+            <label for="message">ご質問・ご要望</label>
+            <textarea id="message" rows="4" placeholder="症状の詳細や、ご質問がございましたらご記入ください。"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary cta__form-submit">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <span class="footer__logo-jp">光整骨院</span>
+          <span class="footer__logo-sub">HIKARI SEIKOTSUIN</span>
+          <p>〒530-0047 大阪府大阪市北区西天満3丁目5-6<br>TEL / FAX : 06-1234-5678</p>
+        </div>
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#about">当院について</a></li>
+            <li><a href="#menu">施術メニュー</a></li>
+            <li><a href="#flow">施術の流れ</a></li>
+            <li><a href="#news">お知らせ</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">料金表</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">スタッフ募集</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
+            <li><a href="#">サイトマップ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 光整骨院（Hikari Seikotsuin）. All Rights Reserved.</p>
+      </div>
+    </div>
+    <button class="pagetop" id="pagetop" aria-label="ページトップへ">
+      <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h6v8h4v-8h6z" fill="currentColor"/></svg>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
