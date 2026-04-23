@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Portfolio</title>
+  <meta name="description" content="About — Creative Developer & Designer based in Tokyo">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #grain {
+      position:fixed; inset:0; z-index:1;
+      pointer-events:none; opacity:0.25; mix-blend-mode:multiply;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="grain"></canvas>
+<div class="cur-dot"></div>
+<div class="cur-ring"></div>
+<div class="pg-trans"></div>
+
+<!-- ====== NAVIGATION ====== -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html"   class="nav-link">Home</a></li>
+    <li><a href="about.html"   class="nav-link active">About</a></li>
+    <li><a href="works.html"   class="nav-link">Works</a></li>
+    <li><a href="skills.html"  class="nav-link">Skills</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====== PAGE HERO ====== -->
+<header class="page-hero">
+  <div class="page-hero-top">
+    <h1 class="page-hero-title">
+      <span class="line"><span class="line-in">About</span></span>
+      <span class="line"><span class="line-in"><em style="font-style:italic;color:var(--gray-300);">Me</em></span></span>
+    </h1>
+    <span class="page-hero-right">02 — About</span>
+  </div>
+</header>
+
+<!-- ====== MAIN CONTENT ====== -->
+<div class="about-main">
+
+  <!-- Sticky photo -->
+  <div class="about-sticky">
+    <div class="about-photo" data-r="scale">
+      <div class="about-photo-inner">
+        <span class="photo-label">Your Photo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div>
+    <h2 class="about-info-name" data-r="up">相田 光毅</h2>
+    <p class="about-info-role" data-r="up" data-d="1">Web creater & designer</p>
+
+    <div class="about-bio" data-r="up" data-d="2">
+      <p>
+        北海道の情報系学部でWeb制作について学んでいる大学生です。
+        主に、フロントエンド・Webデザインについて学んでいます。
+      </p>
+      <p>
+        従来のWeb制作で活用されているなHTML・CSS・JavaScriptの他に、Difyを活用した
+        AIチャットボットの導入やCursorを活用したAIコーディングなど最新の技術を活用し
+        たWeb制作を行っています。
+      </p>
+      <p>
+        サイトユーザーの視点だけではなくて、保守・運用のしやすさといったサイト管理者の
+        視点も大切にしたサイト制作を行っています。
+      </p>
+    </div>
+
+    <!-- Facts -->
+    <div class="about-facts" data-r="up" data-d="3">
+      <div class="fact">
+        <div class="fact-label">Location</div>
+        <div class="fact-val">Hokkaido, Japan</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Availability</div>
+        <div class="fact-val">Open to projects</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Experience</div>
+        <div class="fact-val">2+ Years</div>
+      </div>
+      <div class="fact">
+        <div class="fact-label">Languages</div>
+        <div class="fact-val">Japanese</div>
+      </div>
+    </div>
+
+    <a href="contact.html" class="btn" data-r="up" data-d="4">
+      <span>Get In Touch</span><span class="btn-arr">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- ====== TIMELINE ====== -->
+<section class="timeline-sec">
+  <div class="sec-label" data-r="fade">History</div>
+
+  <div class="timeline-cols">
+    <!-- Experience -->
+    <div>
+      <div class="tl-col-label">Work Experience</div>
+
+      <div class="tl-item" data-r="up" data-d="1">
+        <div class="tl-year">2023 —<br>Present</div>
+        <div>
+          <div class="tl-role">Senior Frontend Developer</div>
+          <div class="tl-place">Creative Agency XYZ</div>
+          <div class="tl-desc">大規模なWebアプリケーションのフロントエンド開発を主導。パフォーマンス最適化とデザインシステムの構築。</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-r="up" data-d="2">
+        <div class="tl-year">2021 —<br>2023</div>
+        <div>
+          <div class="tl-role">UI/UX Designer &amp; Developer</div>
+          <div class="tl-place">Design Studio ABC</div>
+          <div class="tl-desc">インタラクティブなWebサイトとモバイルアプリのデザイン・開発。クライアントとの直接コミュニケーション。</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-r="up" data-d="3">
+        <div class="tl-year">2019 —<br>2021</div>
+        <div>
+          <div class="tl-role">Web Designer</div>
+          <div class="tl-place">Startup Company</div>
+          <div class="tl-desc">スタートアップのビジュアルアイデンティティとWebプレゼンスの確立。デザインから実装まで一貫して担当。</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div>
+      <div class="tl-col-label">Education</div>
+
+      <div class="tl-item" data-r="up" data-d="1">
+        <div class="tl-year">2015 —<br>2019</div>
+        <div>
+          <div class="tl-role">情報デザイン学部</div>
+          <div class="tl-place">東京デザイン大学</div>
+          <div class="tl-desc">インタラクションデザイン、グラフィックデザイン、プログラミングを専攻。卒業制作優秀賞受賞。</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-r="up" data-d="2">
+        <div class="tl-year">2017</div>
+        <div>
+          <div class="tl-role">交換留学</div>
+          <div class="tl-place">Parsons School of Design, NY</div>
+          <div class="tl-desc">1年間のニューヨーク留学。インターナショナルなデザイン環境でのプロジェクト経験。</div>
+        </div>
+      </div>
+
+      <div class="tl-item" data-r="up" data-d="3">
+        <div class="tl-year">2022</div>
+        <div>
+          <div class="tl-role">Google UX Design Certificate</div>
+          <div class="tl-place">Coursera / Google</div>
+          <div class="tl-desc">UXリサーチ、プロトタイピング、ユーザーテストの体系的なスキルを習得。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MARQUEE ====== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Code <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Create <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Inspire <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Innovate <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Refine <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Code <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Create <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Inspire <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Innovate <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Refine <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Portfolio</div>
+      <div class="footer-tagline">Creative Developer &amp; Designer</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html"   class="footer-link">Home</a>
+      <a href="about.html"   class="footer-link">About</a>
+      <a href="works.html"   class="footer-link">Works</a>
+      <a href="skills.html"  class="footer-link">Skills</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" class="footer-link">Twitter</a>
+      <a href="#" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">Dribbble</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Portfolio. All rights reserved.</span>
+    <span class="footer-made">Designed &amp; Built with precision.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works — Portfolio</title>
+  <meta name="description" content="Selected works — Creative Developer & Designer">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #grain {
+      position:fixed; inset:0; z-index:1;
+      pointer-events:none; opacity:0.25; mix-blend-mode:multiply;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="grain"></canvas>
+<div class="cur-dot"></div>
+<div class="cur-ring"></div>
+<div class="pg-trans"></div>
+
+<!-- Hover image preview -->
+<div class="works-hover-img">
+  <div class="whi-inner"></div>
+</div>
+
+<!-- ====== NAVIGATION ====== -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html"   class="nav-link">Home</a></li>
+    <li><a href="about.html"   class="nav-link">About</a></li>
+    <li><a href="works.html"   class="nav-link active">Works</a></li>
+    <li><a href="skills.html"  class="nav-link">Skills</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====== PAGE HERO ====== -->
+<header class="page-hero">
+  <div class="page-hero-top">
+    <h1 class="page-hero-title">
+      <span class="line"><span class="line-in">Selected</span></span>
+      <span class="line"><span class="line-in"><em style="font-style:italic;color:var(--gray-300);">Works</em></span></span>
+    </h1>
+    <span class="page-hero-right">03 — Works</span>
+  </div>
+</header>
+
+<!-- ====== WORKS LIST ====== -->
+<section class="works-sec">
+
+  <!-- Filter -->
+  <div class="works-filter-bar" data-r="fade">
+    <button class="filter-btn on"  data-cat="all">All</button>
+    <button class="filter-btn" data-cat="web">Web Design</button>
+    <button class="filter-btn" data-cat="ui">UI/UX</button>
+    <button class="filter-btn" data-cat="motion">Motion</button>
+    <button class="filter-btn" data-cat="brand">Branding</button>
+  </div>
+
+  <!-- List -->
+  <div class="works-list">
+
+    <a href="#" class="w-item" data-cat="web" data-r="up" data-d="1">
+      <div class="w-num">01</div>
+      <div>
+        <div class="w-cat">Web Design / Development</div>
+        <div class="w-title">Monolith Brand Identity</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">HTML</span>
+        <span class="w-tag">CSS</span>
+        <span class="w-tag">GSAP</span>
+        <span class="w-tag">2025</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="ui" data-r="up" data-d="2">
+      <div class="w-num">02</div>
+      <div>
+        <div class="w-cat">UI/UX Design</div>
+        <div class="w-title">Nexus Dashboard App</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">Figma</span>
+        <span class="w-tag">React</span>
+        <span class="w-tag">TypeScript</span>
+        <span class="w-tag">2025</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="motion" data-r="up" data-d="3">
+      <div class="w-num">03</div>
+      <div>
+        <div class="w-cat">Motion / Interactive</div>
+        <div class="w-title">Void — Interactive Experience</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">WebGL</span>
+        <span class="w-tag">Three.js</span>
+        <span class="w-tag">GLSL</span>
+        <span class="w-tag">2025</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="web" data-r="up" data-d="4">
+      <div class="w-num">04</div>
+      <div>
+        <div class="w-cat">Web Design</div>
+        <div class="w-title">Lumina — Architecture Studio</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">Next.js</span>
+        <span class="w-tag">Framer Motion</span>
+        <span class="w-tag">Sanity</span>
+        <span class="w-tag">2024</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="brand" data-r="up" data-d="5">
+      <div class="w-num">05</div>
+      <div>
+        <div class="w-cat">Branding / Identity</div>
+        <div class="w-title">Ether Coffee Brand</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">Illustrator</span>
+        <span class="w-tag">Photoshop</span>
+        <span class="w-tag">Print</span>
+        <span class="w-tag">2024</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="ui" data-r="up" data-d="6">
+      <div class="w-num">06</div>
+      <div>
+        <div class="w-cat">UI/UX Design</div>
+        <div class="w-title">Pulse — Health Tracking App</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">Figma</span>
+        <span class="w-tag">Protopie</span>
+        <span class="w-tag">iOS</span>
+        <span class="w-tag">2024</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="motion" data-r="up" data-d="7">
+      <div class="w-num">07</div>
+      <div>
+        <div class="w-cat">Motion Design</div>
+        <div class="w-title">Kinetic Typography Series</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">After Effects</span>
+        <span class="w-tag">Cinema 4D</span>
+        <span class="w-tag">2023</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+    <a href="#" class="w-item" data-cat="web" data-r="up" data-d="8">
+      <div class="w-num">08</div>
+      <div>
+        <div class="w-cat">Web Development</div>
+        <div class="w-title">Noir — Photography Portfolio</div>
+      </div>
+      <div class="w-tags">
+        <span class="w-tag">Vue.js</span>
+        <span class="w-tag">GSAP</span>
+        <span class="w-tag">Cloudinary</span>
+        <span class="w-tag">2023</span>
+      </div>
+      <div class="w-arrow">→</div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ====== MARQUEE ====== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">UI/UX <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Interactive <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Development <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">UI/UX <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Interactive <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Development <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- ====== CTA ====== -->
+<section class="section" style="text-align:center;">
+  <div class="sec-label" style="justify-content:center;" data-r="fade">Next Step</div>
+  <h2 style="font-family:var(--font-disp);font-size:clamp(36px,6vw,88px);font-weight:300;letter-spacing:-0.025em;line-height:1;margin-bottom:40px;" data-r="up" data-d="1">
+    Let's work<br><em style="font-style:italic;color:var(--gray-300);">together</em>
+  </h2>
+  <a href="contact.html" class="btn" style="margin:0 auto;" data-r="up" data-d="2">
+    <span>Start a Project</span><span class="btn-arr">→</span>
+  </a>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Portfolio</div>
+      <div class="footer-tagline">Creative Developer &amp; Designer</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html"   class="footer-link">Home</a>
+      <a href="about.html"   class="footer-link">About</a>
+      <a href="works.html"   class="footer-link">Works</a>
+      <a href="skills.html"  class="footer-link">Skills</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" class="footer-link">Twitter</a>
+      <a href="#" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">Dribbble</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Portfolio. All rights reserved.</span>
+    <span class="footer-made">Designed &amp; Built with precision.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

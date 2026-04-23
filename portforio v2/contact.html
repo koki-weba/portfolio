@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Portfolio</title>
+  <meta name="description" content="Contact — Let's work together">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #grain {
+      position:fixed; inset:0; z-index:1;
+      pointer-events:none; opacity:0.25; mix-blend-mode:multiply;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="grain"></canvas>
+<div class="cur-dot"></div>
+<div class="cur-ring"></div>
+<div class="pg-trans"></div>
+
+<!-- ====== NAVIGATION ====== -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html"   class="nav-link">Home</a></li>
+    <li><a href="about.html"   class="nav-link">About</a></li>
+    <li><a href="works.html"   class="nav-link">Works</a></li>
+    <li><a href="skills.html"  class="nav-link">Skills</a></li>
+    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====== PAGE HERO ====== -->
+<header class="page-hero">
+  <div class="page-hero-top">
+    <h1 class="page-hero-title">
+      <span class="line"><span class="line-in">Let's Work</span></span>
+      <span class="line"><span class="line-in"><em style="font-style:italic;color:var(--gray-300);">Together</em></span></span>
+    </h1>
+    <span class="page-hero-right">05 — Contact</span>
+  </div>
+</header>
+
+<!-- ====== CONTACT MAIN ====== -->
+<section class="contact-sec">
+  <div class="contact-grid">
+
+    <!-- Info side -->
+    <div>
+      <h2 class="c-heading" data-r="up">
+        新しいプロジェクトや<br>コラボレーションの<br>ご相談をお待ちしています。
+      </h2>
+      <p class="c-desc" data-r="up" data-d="1">
+        アイデアをお持ちの方、プロジェクトをお持ちの方、
+        または単純に挨拶をしたい方も、
+        お気軽にご連絡ください。できる限り早くご返信します。
+      </p>
+
+      <div class="c-details" data-r="up" data-d="2">
+        <div class="c-detail">
+          <span class="c-det-label">Email</span>
+          <a href="mailto:hello@portfolio.com" class="c-det-val">hello@portfolio.com</a>
+        </div>
+        <div class="c-detail">
+          <span class="c-det-label">Location</span>
+          <span class="c-det-val">Tokyo, Japan</span>
+        </div>
+        <div class="c-detail">
+          <span class="c-det-label">Availability</span>
+          <span class="c-det-val">Open for freelance</span>
+        </div>
+        <div class="c-detail">
+          <span class="c-det-label">Response Time</span>
+          <span class="c-det-val">Within 24 hours</span>
+        </div>
+      </div>
+
+      <!-- Social links -->
+      <div style="margin-top:48px;" data-r="up" data-d="3">
+        <div style="font-family:var(--font-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray-500);margin-bottom:20px;">Social</div>
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <a href="#" style="padding:16px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--gray-300);transition:color .3s;" class="c-det-val">
+            Twitter <span style="font-family:var(--font-mono);font-size:10px;color:var(--gray-500);">@yourhandle →</span>
+          </a>
+          <a href="#" style="padding:16px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--gray-300);transition:color .3s;" class="c-det-val">
+            GitHub <span style="font-family:var(--font-mono);font-size:10px;color:var(--gray-500);">@yourhandle →</span>
+          </a>
+          <a href="#" style="padding:16px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--gray-300);transition:color .3s;" class="c-det-val">
+            Dribbble <span style="font-family:var(--font-mono);font-size:10px;color:var(--gray-500);">@yourhandle →</span>
+          </a>
+          <a href="#" style="padding:16px 0;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--gray-300);transition:color .3s;" class="c-det-val">
+            LinkedIn <span style="font-family:var(--font-mono);font-size:10px;color:var(--gray-500);">Your Name →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form side -->
+    <div data-r="up" data-d="2">
+      <form class="c-form" novalidate>
+
+        <div class="form-grp">
+          <label class="form-lbl" for="name">Your Name</label>
+          <input class="form-inp" type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+
+        <div class="form-grp">
+          <label class="form-lbl" for="email">Email Address</label>
+          <input class="form-inp" type="email" id="email" name="email" placeholder="hello@example.com" required>
+        </div>
+
+        <div class="form-grp">
+          <label class="form-lbl" for="subject">Subject</label>
+          <input class="form-inp" type="text" id="subject" name="subject" placeholder="Project Inquiry">
+        </div>
+
+        <div class="form-grp">
+          <label class="form-lbl" for="budget">Budget Range</label>
+          <input class="form-inp" type="text" id="budget" name="budget" placeholder="¥500,000 — ¥1,000,000">
+        </div>
+
+        <div class="form-grp">
+          <label class="form-lbl" for="message">Message</label>
+          <textarea class="form-txt" id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn form-send">
+          <span>Send Message</span><span class="btn-arr">→</span>
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== BIG EMAIL CTA ====== -->
+<section class="section" style="border-top:1px solid var(--border);padding-top:80px;padding-bottom:80px;">
+  <div style="overflow:hidden;">
+    <a href="mailto:hello@portfolio.com"
+       style="display:block;font-family:var(--font-disp);font-size:clamp(32px,6vw,88px);font-weight:300;letter-spacing:-0.03em;line-height:1;color:var(--gray-500);transition:color .5s var(--ease),letter-spacing .5s var(--ease);"
+       onmouseenter="this.style.color='var(--white)';this.style.letterSpacing='-0.01em'"
+       onmouseleave="this.style.color='var(--gray-500)';this.style.letterSpacing='-0.03em'">
+      hello@portfolio.com
+    </a>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Portfolio</div>
+      <div class="footer-tagline">Creative Developer &amp; Designer</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html"   class="footer-link">Home</a>
+      <a href="about.html"   class="footer-link">About</a>
+      <a href="works.html"   class="footer-link">Works</a>
+      <a href="skills.html"  class="footer-link">Skills</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" class="footer-link">Twitter</a>
+      <a href="#" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">Dribbble</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Portfolio. All rights reserved.</span>
+    <span class="footer-made">Designed &amp; Built with precision.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO — Web creater & designer</title>
+  <meta name="description" content="Creative Developer & Designer — Building refined digital experiences">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Grain canvas */
+    #grain {
+      position: fixed; inset: 0; z-index: 1;
+      pointer-events: none; opacity: 0.25; mix-blend-mode: multiply;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ====== GRAIN ====== -->
+<canvas id="grain"></canvas>
+
+<!-- ====== LOADER ====== -->
+<div class="loader">
+  <div class="loader-logo">Portfolio</div>
+  <div class="loader-track"><div class="loader-fill"></div></div>
+  <div class="loader-num">000</div>
+</div>
+
+<!-- ====== CURSOR ====== -->
+<div class="cur-dot"></div>
+<div class="cur-ring"></div>
+
+<!-- ====== PAGE TRANSITION ====== -->
+<div class="pg-trans"></div>
+
+<!-- ====== NAVIGATION ====== -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Portfolio</a>
+  <ul class="nav-links">
+    <li><a href="index.html"   class="nav-link active">Home</a></li>
+    <li><a href="about.html"   class="nav-link">About</a></li>
+    <li><a href="works.html"   class="nav-link">Works</a></li>
+    <li><a href="skills.html"  class="nav-link">Skills</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="hero-grid"></div>
+
+  <!--<span class="hero-corner tl">01 — 2026</span>-->
+  <span class="hero-corner tr">Hokkaido, JP</span>
+
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="line"><span class="line-in">Web</span></span>
+      <span class="line"><span class="line-in"><em>Creater</em></span></span>
+      <span class="line"><span class="line-in">& Designer</span></span>
+    </h1>
+
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        ユーザー・サイト管理者の両視点に立ったWeb制作。
+        <br>
+        サイトの利便性と保守・管理のしやすさの両立を心がけています。
+      </p>
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== WORKS PREVIEW ====== -->
+<section class="section" style="padding:120px var(--pad-x);">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:64px;padding-bottom:28px;border-bottom:1px solid var(--border);">
+    <div>
+      <p class="sec-label" data-r="fade">Selected Works</p>
+      <h2 style="font-family:var(--font-disp);font-size:clamp(36px,5vw,64px);font-weight:300;letter-spacing:-0.02em;" data-r="up" data-d="1">
+        Featured Projects
+      </h2>
+    </div>
+    <a href="works.html" class="link-arr" data-r="fade" data-d="2">View All <span>→</span></a>
+  </div>
+
+  <div class="works-preview-grid">
+    <!-- Card 1 -->
+    <div class="wp-card" data-r="up" data-d="1">
+      <div class="wp-thumb tall"><div class="wp-thumb-inner g1"></div></div>
+      <div class="wp-num">01</div>
+      <div class="wp-cat">Web Design / Development</div>
+      <h3 class="wp-title">Monolith Brand Identity</h3>
+      <p class="wp-desc">ミニマルな美学を軸にしたブランドサイト。インタラクティブなトランジションと洗練されたビジュアルで構成。</p>
+      <a href="works.html" class="wp-link">View Project <span>→</span></a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="wp-card" data-r="up" data-d="2">
+      <div class="wp-thumb tall"><div class="wp-thumb-inner g2"></div></div>
+      <div class="wp-num">02</div>
+      <div class="wp-cat">UI/UX Design</div>
+      <h3 class="wp-title">Nexus Dashboard App</h3>
+      <p class="wp-desc">データ可視化に特化したダッシュボードアプリ。ダークモードを基調としたモダンなUIデザイン。</p>
+      <a href="works.html" class="wp-link">View Project <span>→</span></a>
+    </div>
+
+    <!-- Card Wide -->
+    <div class="wp-card wide" data-r="up" data-d="3">
+      <div class="wp-thumb"><div class="wp-thumb-inner g3"></div></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+        <div>
+          <div class="wp-num">03</div>
+          <div class="wp-cat">Motion / Interactive</div>
+          <h3 class="wp-title">Void — Interactive Experience</h3>
+        </div>
+        <div style="max-width:360px;">
+          <p class="wp-desc">WebGLを活用したインタラクティブな3Dエクスペリエンス。ユーザーの操作に反応するパーティクルシステム。</p>
+          <a href="works.html" class="wp-link">View Project <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MARQUEE ====== -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Development <span class="marquee-dot"></span></span>
+    <span class="marquee-item">UI / UX <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Creative Coding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Typography <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Interactive <span class="marquee-dot"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Development <span class="marquee-dot"></span></span>
+    <span class="marquee-item">UI / UX <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Motion Design <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Branding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Creative Coding <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Typography <span class="marquee-dot"></span></span>
+    <span class="marquee-item">Interactive <span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- ====== ABOUT TEASER ====== -->
+<div class="about-teaser">
+  <div class="at-text">
+    <div class="sec-label" data-r="fade">About</div>
+    <h2 class="at-heading" data-r="up" data-d="1">
+      Crafting digital<br>experiences with<br><em style="font-style:italic;color:var(--gray-300);">intention.</em>
+    </h2>
+    <p class="at-body" data-r="up" data-d="2">
+      デザインとテクノロジーの交差点で生きるクリエイター。
+      美しさと機能性を融合させた、記憶に残るデジタル体験を追求しています。
+    </p>
+    <a href="about.html" class="btn" data-r="up" data-d="3">
+      <span>About Me</span><span class="btn-arr">→</span>
+    </a>
+  </div>
+  <div class="at-img" data-r="scale" data-d="2">
+    <div class="at-img-inner"></div>
+  </div>
+</div>
+
+<!-- ====== STATS ====== -->
+<section class="section" style="border-top:1px solid var(--border);">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);">
+    <div style="background:var(--black);padding:56px 48px;" data-r="up" data-d="1">
+      <div style="font-family:var(--font-disp);font-size:clamp(48px,6vw,80px);font-weight:300;letter-spacing:-0.02em;line-height:1;margin-bottom:12px;color:var(--white);">
+        <span data-count="5">0</span>+
+      </div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-500);">Years Experience</div>
+    </div>
+    <div style="background:var(--black);padding:56px 48px;" data-r="up" data-d="2">
+      <div style="font-family:var(--font-disp);font-size:clamp(48px,6vw,80px);font-weight:300;letter-spacing:-0.02em;line-height:1;margin-bottom:12px;">
+        <span data-count="40">0</span>+
+      </div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-500);">Projects Delivered</div>
+    </div>
+    <div style="background:var(--black);padding:56px 48px;" data-r="up" data-d="3">
+      <div style="font-family:var(--font-disp);font-size:clamp(48px,6vw,80px);font-weight:300;letter-spacing:-0.02em;line-height:1;margin-bottom:12px;">
+        <span data-count="20">0</span>+
+      </div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-500);">Happy Clients</div>
+    </div>
+    <div style="background:var(--black);padding:56px 48px;" data-r="up" data-d="4">
+      <div style="font-family:var(--font-disp);font-size:clamp(48px,6vw,80px);font-weight:300;letter-spacing:-0.02em;line-height:1;margin-bottom:12px;">
+        <span data-count="3">0</span>
+      </div>
+      <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-500);">Awards Won</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Portfolio</div>
+      <div class="footer-tagline">Creative Developer &amp; Designer</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html"   class="footer-link">Home</a>
+      <a href="about.html"   class="footer-link">About</a>
+      <a href="works.html"   class="footer-link">Works</a>
+      <a href="skills.html"  class="footer-link">Skills</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" class="footer-link">Twitter</a>
+      <a href="#" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">Dribbble</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Portfolio. All rights reserved.</span>
+    <span class="footer-made">Designed &amp; Built with precision.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
