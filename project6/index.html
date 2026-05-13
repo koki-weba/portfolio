@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>田中整体院 | 根本から整える。札幌の整体院。</title>
+  <meta name="description" content="腰痛・肩こり・骨盤矯正を根本から改善。国家資格保有の施術者が一人ひとりに合わせたオーダーメイド施術。初回体験¥3,300〜。完全予約制。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+<!-- ══════════════════════════════
+     LOADER
+══════════════════════════════ -->
+<div id="loader" class="loader" role="status" aria-label="読み込み中">
+  <!-- Background panels (split on exit) -->
+  <div class="loader-panel loader-panel-t"></div>
+  <div class="loader-panel loader-panel-b"></div>
+
+  <!-- Center content -->
+  <div class="loader-inner">
+    <div class="loader-bg-char" aria-hidden="true">葵</div>
+
+    <div class="loader-eyebrow">
+      <span class="loader-eyebrow-line l"></span>
+      <span class="loader-eyebrow-text">Seitai-in Aoi</span>
+      <span class="loader-eyebrow-line r"></span>
+    </div>
+
+    <div class="loader-logo-clip">
+      <span class="loader-logo">整体院 葵</span>
+    </div>
+
+    <p class="loader-sub">根本から整える。札幌の整体院。</p>
+
+    <div class="loader-progress">
+      <div class="loader-bar">
+        <div class="loader-bar-fill" id="loaderBarFill"></div>
+      </div>
+      <span class="loader-pct" id="loaderPct">0</span>
+    </div>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+<div class="cursor-dot"  id="cursorDot"  aria-hidden="true"></div>
+
+<!-- Page Transition Overlay -->
+<div class="pg-overlay" id="pgOverlay" aria-hidden="true">
+  <div class="pg-panel"></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════
+     HEADER
+══════════════════════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" data-page="top" class="logo nav-trigger">
+      <span class="logo-name">整体院 葵</span>
+      <span class="logo-sub">Seitai-in Aoi — Sapporo</span>
+    </a>
+    <nav class="header-nav" role="navigation" aria-label="メインナビゲーション">
+      <ul class="nav-links">
+        <li><a href="#" data-page="top"    class="nav-trigger">TOP</a></li>
+        <li><a href="#" data-page="menu"   class="nav-trigger">メニュー</a></li>
+        <li><a href="#" data-page="flow"   class="nav-trigger">ご来院の流れ</a></li>
+        <li><a href="#" data-page="staff"  class="nav-trigger">スタッフ</a></li>
+        <li><a href="#" data-page="access" class="nav-trigger">アクセス</a></li>
+      </ul>
+      <a href="#" data-page="access" class="btn btn-outline-light header-cta nav-trigger">ご予約</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="モバイルナビゲーション">
+  <a href="#" data-page="top"    class="mob-link nav-trigger">TOP</a>
+  <a href="#" data-page="menu"   class="mob-link nav-trigger">メニュー</a>
+  <a href="#" data-page="flow"   class="mob-link nav-trigger">ご来院の流れ</a>
+  <a href="#" data-page="staff"  class="mob-link nav-trigger">スタッフ</a>
+  <a href="#" data-page="access" class="mob-link nav-trigger">アクセス</a>
+  <a href="#" data-page="access" class="mob-cta nav-trigger">ご予約はこちら</a>
+</nav>
+
+
+<!-- ══════════════════════════════
+     PAGES
+══════════════════════════════ -->
+<main id="pagesWrap">
+
+<!-- ━━━━━━━━━━━━━━━━━━ PAGE: TOP ━━━━━━━━━━━━━━━━━━ -->
+<section class="page active" id="page-top" data-page-id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <div class="reveal hero-reveal"><div class="reveal-inner">痛みのない、</div></div>
+        <div class="reveal hero-reveal"><div class="reveal-inner">毎日へ。</div></div>
+      </h1>
+
+      <p class="hero-sub" id="heroSub">
+        腰痛・肩こり・骨盤矯正を根本から。<br>
+        繰り返さない身体をつくる整体院です。
+      </p>
+
+      <div class="hero-stats" id="heroStats">
+        <div class="stat-item">
+          <div class="stat-num"><span class="count-up" data-target="2000" data-suffix="+">0</span></div>
+          <div class="stat-label">施術実績</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="count-up" data-target="90" data-suffix="%">0</span></div>
+          <div class="stat-label">リピート率</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="count-up" data-target="8" data-suffix="年">0</span></div>
+          <div class="stat-label">施術経験</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">★<span class="count-up" data-target="4.2" data-decimal="1">0</span></div>
+          <div class="stat-label">口コミ評価</div>
+        </div>
+      </div>
+
+      <div class="hero-cta" id="heroCta">
+        <a href="#" data-page="access" class="btn btn-solid mag-btn nav-trigger">無料カウンセリング予約</a>
+        <a href="#" data-page="menu"   class="btn btn-outline-light mag-btn nav-trigger">施術メニューを見る</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-parallax-container>
+      <img
+        src="images/top1.jpg"
+        alt="整体施術の様子"
+        data-parallax="0.25"
+        loading="eager"
+      >
+      <div class="hero-noise" aria-hidden="true"></div>
+    </div>
+  </div>
+
+
+  <!-- Concept -->
+  <section class="concept section-pad">
+    <div class="container">
+      <div class="concept-grid">
+        <div class="concept-text">
+          <span class="label-en">Philosophy</span>
+          <blockquote class="concept-quote">
+            <div class="reveal"><div class="reveal-inner">痛みは、</div></div>
+            <div class="reveal"><div class="reveal-inner">身体からの</div></div>
+            <div class="reveal"><div class="reveal-inner">メッセージです。</div></div>
+          </blockquote>
+          <p class="concept-body fade-in">
+            「なんとかなる」と放置しがちな日々のコリや痛み。それは身体が発している小さなSOSです。整体院 葵では、症状の表面だけでなく、痛みの根本にある原因から丁寧に向き合います。
+          </p>
+          <p class="concept-body fade-in" style="margin-top:16px">
+            施術後に「また戻った」を繰り返さないために——根本的な改善と、日々の生活習慣へのアドバイスで、あなたの身体を長期的にサポートします。
+          </p>
+          <a href="#" data-page="flow" class="btn btn-outline-dark mag-btn nav-trigger fade-in" style="margin-top:40px">ご来院の流れを見る</a>
+        </div>
+        <div class="concept-visual fade-in" data-parallax-container>
+          <img
+            src="images/top2.jpg"
+            alt="施術風景"
+            data-parallax="0.2"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <div class="cta-strip-inner fade-in" data-delay="0.1">
+        <div>
+          <p class="cta-strip-lead">まずはお気軽にご相談ください。</p>
+          <p style="font-size:0.85em;margin-top:6px;opacity:0.85;color:var(--bg);">電話番号：07-0163-4057</p>
+        </div>
+        <a href="#" data-page="access" class="btn btn-accent mag-btn nav-trigger">今すぐ予約する</a>
+      </div>
+    </div>
+  </section>
+
+</section><!-- /page-top -->
+
+
+<!-- ━━━━━━━━━━━━━━━━━━ PAGE: MENU ━━━━━━━━━━━━━━━━━━ -->
+<section class="page" id="page-menu" data-page-id="menu">
+
+  <div class="inner-hero">
+    <div class="container">
+      <span class="label-en ih-label">Menu &amp; Price</span>
+      <h2 class="page-h ih-title">施術メニュー・料金</h2>
+      <p class="page-sub ih-sub">すべてのコースにカウンセリングが含まれます。</p>
+    </div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="menu-grid">
+
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="mi-header">
+              <span class="mi-name">全身整体コース</span>
+              <span class="mi-time">60分</span>
+              <span class="mi-price">¥6,600</span>
+            </div>
+            <p class="mi-desc">全身のバランスを整え、慢性的な疲れやコリを根本から改善します。身体全体のゆがみに丁寧にアプローチ。</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-header">
+              <span class="mi-name">腰・肩 集中ケア</span>
+              <span class="mi-time">45分</span>
+              <span class="mi-price">¥4,950</span>
+            </div>
+            <p class="mi-desc">腰痛・肩こりの原因に直接アプローチ。デスクワークや立ち仕事で蓄積した疲労をしっかりほぐします。</p>
+          </div>
+          <div class="menu-item">
+            <div class="mi-header">
+              <span class="mi-name">骨盤矯正コース</span>
+              <span class="mi-time">50分</span>
+              <span class="mi-price">¥5,500</span>
+            </div>
+            <p class="mi-desc">産後のケアや姿勢改善に。骨盤のゆがみを整えることで、腰痛・冷え・むくみの改善が期待できます。</p>
+          </div>
+        </div>
+
+        <div class="menu-aside">
+          <div class="menu-photo">
+            <img
+              src="images/menu1.jpg"
+              alt="施術の様子"
+              loading="lazy"
+            >
+          </div>
+          <div class="menu-aside-note fade-in">
+            <p>身体の状態に合わせたオーダーメイドの施術をご提供しています。<br>まずはお気軽にご相談ください。</p>
+            <a href="#" data-page="access" class="btn btn-solid mag-btn nav-trigger" style="margin-top:20px">予約する</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</section><!-- /page-menu -->
+
+
+<!-- ━━━━━━━━━━━━━━━━━━ PAGE: FLOW ━━━━━━━━━━━━━━━━━━ -->
+<section class="page" id="page-flow" data-page-id="flow">
+
+  <div class="inner-hero">
+    <div class="container">
+      <span class="label-en ih-label">Flow</span>
+      <h2 class="page-h ih-title">ご来院の流れ</h2>
+      <p class="page-sub ih-sub">初めての方も安心して受けていただけるよう、一つひとつ丁寧にご案内します。</p>
+    </div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="vflow-wrap">
+
+        <div class="vflow-steps">
+
+          <div class="vflow-step">
+            <div class="vflow-node-col">
+              <div class="vnode-ring"><div class="vnode-dot"></div></div>
+              <div class="vnode-line"></div>
+            </div>
+            <div class="vflow-card">
+              <span class="vflow-num">01</span>
+              <h3 class="vflow-title">ご予約</h3>
+              <p class="vflow-body">WEBまたはお電話でご希望の日時にご予約ください。当日予約も受付中。完全予約制のため、お待たせすることなくスムーズにご案内できます。</p>
+            </div>
+          </div>
+
+          <div class="vflow-step">
+            <div class="vflow-node-col">
+              <div class="vnode-ring"><div class="vnode-dot"></div></div>
+              <div class="vnode-line"></div>
+            </div>
+            <div class="vflow-card">
+              <span class="vflow-num">02</span>
+              <h3 class="vflow-title">カウンセリング</h3>
+              <p class="vflow-body">症状・生活習慣・お悩みを丁寧にヒアリング。無理な提案は一切しません。お客様の状態をしっかり把握してから施術方針を決定します。</p>
+            </div>
+          </div>
+
+          <div class="vflow-step">
+            <div class="vflow-node-col">
+              <div class="vnode-ring"><div class="vnode-dot"></div></div>
+              <div class="vnode-line"></div>
+            </div>
+            <div class="vflow-card">
+              <span class="vflow-num">03</span>
+              <h3 class="vflow-title">姿勢・身体分析</h3>
+              <p class="vflow-body">姿勢・可動域などを確認し、痛みの根本原因を特定します。科学的なアプローチで「なぜ痛みが起きているのか」を丁寧にご説明します。</p>
+            </div>
+          </div>
+
+          <div class="vflow-step">
+            <div class="vflow-node-col">
+              <div class="vnode-ring"><div class="vnode-dot"></div></div>
+              <div class="vnode-line"></div>
+            </div>
+            <div class="vflow-card">
+              <span class="vflow-num">04</span>
+              <h3 class="vflow-title">施術</h3>
+              <p class="vflow-body">お一人おひとりの状態に合わせたオーダーメイドの施術を行います。国家資格を持つ施術者が責任をもって対応します。</p>
+            </div>
+          </div>
+
+          <div class="vflow-step last">
+            <div class="vflow-node-col">
+              <div class="vnode-ring"><div class="vnode-dot"></div></div>
+            </div>
+            <div class="vflow-card">
+              <span class="vflow-num">05</span>
+              <h3 class="vflow-title">アフターケア</h3>
+              <p class="vflow-body">施術後に変化を確認し、ご自宅でのセルフケアアドバイスをお伝えします。繰り返さない身体づくりをサポートします。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad" style="padding-top:0">
+    <div class="container">
+      <hr class="section-rule" style="margin-bottom:var(--sp)">
+      <span class="label-en fade-in">FAQ</span>
+      <h2 class="section-heading fade-in">よくあるご質問</h2>
+      <p class="section-sub fade-in">ご来院前に気になることをまとめました。</p>
+
+      <div class="faq-list fade-in" style="margin-top:48px">
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">はじめてでも大丈夫ですか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">はい、もちろんです。初回はカウンセリングに十分な時間を設けており、お体の状態やお悩みをじっくりお聞きします。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">施術中に痛みはありますか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">強い痛みを伴う施術は行っておりません。ただし、コリが強い部位では「心地よい痛み」を感じることがあります。施術中はいつでも圧を調整しますのでご安心ください。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">何回通えばよくなりますか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">症状によって異なりますが、多くの方が3〜5回の施術で効果を実感されています。初回カウンセリング時におおよその施術計画をご提案しますので、見通しをもって通院いただけます。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">健康保険は使えますか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">当院は自費診療専門となっております。保険適用での施術は行っておりません。根本的な原因にアプローチすることで、少ない通院回数で改善を目指しています。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">予約なしで来院できますか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">完全予約制です。お一人おひとりに十分な施術時間を確保するためです。WEBフォームまたはお電話でご予約ください。当日のご予約もお電話にて承っております。</p></div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" role="button" tabindex="0">
+            <span class="faq-q-text">着替えは必要ですか？</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </div>
+          <div class="faq-a"><p class="faq-a-inner">施術用のウェアを無料でご用意しています。お仕事帰りや買い物ついでにもそのままお越しください。手ぶらで大丈夫です。</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</section><!-- /page-flow -->
+
+
+<!-- ━━━━━━━━━━━━━━━━━━ PAGE: STAFF ━━━━━━━━━━━━━━━━━━ -->
+<section class="page" id="page-staff" data-page-id="staff">
+
+  <div class="inner-hero">
+    <div class="container">
+      <span class="label-en ih-label">Staff</span>
+      <h2 class="page-h ih-title">スタッフ紹介</h2>
+      <p class="page-sub ih-sub">国家資格を保有する施術者が、責任をもってサポートします。</p>
+    </div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+
+      <!-- Director -->
+      <div class="staff-featured fade-in">
+        <div class="staff-photo tilt-card">
+          <img src="images/staff1.jpg" alt="院長 山田健太" loading="lazy">
+        </div>
+        <div class="staff-info">
+          <p class="staff-role">院長 / Director</p>
+          <p class="staff-name-ja">山田 健太</p>
+          <p class="staff-name-en">Kenta Yamada</p>
+          <div class="staff-quals">
+            <span>整体師</span>
+            <span>姿勢改善スペシャリスト</span>
+            <span>施術歴 8年</span>
+            <span>延べ 2,000名以上</span>
+          </div>
+          <p class="staff-comment">「痛みをなくすだけでなく、その痛みが戻らない身体をご一緒につくっていきたいと思っています。どんな些細なことでも、まずはご相談ください。」</p>
+        </div>
+      </div>
+
+      <!-- Sub-staff -->
+      <div class="staff-row">
+        <div class="staff-card-small fade-in">
+          <div class="staff-photo-small tilt-card">
+            <img src="images/staff2.jpg" alt="スタッフ 鈴木美咲" loading="lazy">
+          </div>
+          <div class="staff-info">
+            <p class="staff-role">スタッフ</p>
+            <p class="staff-name-ja">鈴木 美咲</p>
+            <p class="staff-name-en">Misaki Suzuki</p>
+            <div class="staff-quals">
+              <span>セラピスト</span>
+              <span>産後ケアリスト</span>
+            </div>
+            <p class="staff-comment">「産後ケアや女性特有のお悩みに対応しています。安心してご相談ください。」</p>
+          </div>
+        </div>
+
+        <div class="staff-card-small fade-in">
+          <div class="staff-photo-small tilt-card">
+            <img src="images/staff3.jpg" alt="スタッフ 田中大輔" loading="lazy">
+          </div>
+          <div class="staff-info">
+            <p class="staff-role">スタッフ</p>
+            <p class="staff-name-ja">田中 大輔</p>
+            <p class="staff-name-en">Daisuke Tanaka</p>
+            <div class="staff-quals">
+              <span>スポーツ整体師</span>
+              <span>コンディショニング専門</span>
+            </div>
+            <p class="staff-comment">「スポーツ障害から慢性疲労まで幅広く対応。アスリートの方もお気軽に。」</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</section><!-- /page-staff -->
+
+
+<!-- ━━━━━━━━━━━━━━━━━━ PAGE: ACCESS ━━━━━━━━━━━━━━━━━━ -->
+<section class="page" id="page-access" data-page-id="access">
+
+  <div class="inner-hero">
+    <div class="container">
+      <span class="label-en ih-label">Access &amp; Reservation</span>
+      <h2 class="page-h ih-title">アクセス・ご予約</h2>
+      <p class="page-sub ih-sub">地下鉄24軒駅より徒歩10分。ご予約はWEBまたはお電話にて。</p>
+    </div>
+  </div>
+
+  <section class="section-pad">
+    <div class="container">
+
+      <div class="access-grid">
+        <div class="access-info fade-in">
+          <p class="access-name">整体院 葵</p>
+          <table class="access-table">
+            <tbody>
+              <tr>
+                <th>住所</th>
+                <td>〒060-0008<br>北海道札幌市中央区北８条西２０丁目２</td>
+              </tr>
+              <tr>
+                <th>最寄駅</th>
+                <td>地下鉄「24軒駅」徒歩10分</td>
+              </tr>
+              <tr>
+                <th>営業時間</th>
+                <td>平日：10:00〜20:00<br>土曜：10:00〜18:00</td>
+              </tr>
+              <tr>
+                <th>定休日</th>
+                <td>日曜・祝日</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="access-tel">
+            <p class="tel-label">お電話でのご予約・お問い合わせ</p>
+            <a href="tel:0701634057" class="tel-number">07-0163-4057</a>
+          </div>
+        </div>
+
+        <div class="access-map fade-in">
+          <iframe
+            src="https://maps.google.com/maps?q=北海道札幌市中央区北8条西20丁目2&output=embed&hl=ja"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="整体院 葵 地図"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Reservation -->
+      <div class="reservation-block">
+        <hr class="section-rule fade-in" style="margin:var(--sp) 0 60px">
+        <span class="label-en fade-in">Reservation</span>
+        <h2 class="section-heading fade-in">ご予約・お問い合わせ</h2>
+        <p class="section-sub fade-in">ご入力いただいた内容を確認し、24時間以内にご連絡いたします。</p>
+
+        <form id="contactForm" novalidate class="contact-form fade-in">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">お名前 <span class="req">必須</span></label>
+              <input type="text" id="name" name="name" placeholder="山田 太郎" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="furigana">フリガナ <span class="req">必須</span></label>
+              <input type="text" id="furigana" name="furigana" placeholder="ヤマダ タロウ" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">電話番号 <span class="req">必須</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="090-1234-5678" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス <span class="req">必須</span></label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="course">ご希望のメニュー</label>
+              <select id="course" name="course">
+                <option value="">選択してください</option>
+                <option value="trial">初回体験コース（¥3,300 / 60分）</option>
+                <option value="fullbody">全身整体コース（¥6,600 / 60分）</option>
+                <option value="focus">腰・肩 集中ケア（¥4,950 / 45分）</option>
+                <option value="pelvis">骨盤矯正コース（¥5,500 / 50分）</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">ご希望日時</label>
+              <input type="datetime-local" id="date" name="date">
+            </div>
+            <div class="form-group full">
+              <label for="message">症状・ご要望など</label>
+              <textarea id="message" name="message" placeholder="現在お悩みの症状やご要望があればお気軽にご記入ください。"></textarea>
+            </div>
+          </div>
+          <p class="form-note">※ご入力いただいた個人情報は予約対応にのみ使用し、第三者への提供は一切行いません。</p>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-solid mag-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+              予約を申し込む
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</section><!-- /page-access -->
+
+</main><!-- /pagesWrap -->
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" data-page="top" class="footer-logo nav-trigger">整体院 葵</a>
+        <p class="footer-tagline">根本から整える。繰り返さない身体をつくる。<br>国家資格保有者によるオーダーメイド施術。</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="LINE">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967C23.261 13.937 24 12.214 24 10.304z"/></svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835-8.16-10.666h6.055l4.26 5.631L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#" data-page="top"    class="nav-trigger">TOP</a></li>
+          <li><a href="#" data-page="menu"   class="nav-trigger">施術メニュー</a></li>
+          <li><a href="#" data-page="flow"   class="nav-trigger">ご来院の流れ</a></li>
+          <li><a href="#" data-page="staff"  class="nav-trigger">スタッフ紹介</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#" data-page="access" class="nav-trigger">アクセス</a></li>
+          <li><a href="#" data-page="access" class="nav-trigger">ご予約</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 整体院 葵. All rights reserved.</span>
+      <span>北海道札幌市中央区北８条西２０丁目２</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<div class="floating-btn" id="floatingBtn">
+  <a href="#" data-page="access" class="btn btn-solid nav-trigger">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    今すぐ予約
+  </a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
