@@ -4332,3 +4332,195 @@ a.coc-value:hover { color: var(--clr-accent); }
   .contact-form-card { padding: 24px 16px; }
   .sns-links { gap: 16px; }
 }
+
+/* =====================================================
+   LOADING ANIMATIONS
+   ===================================================== */
+
+/* ── 初回ロード（フルスクリーン） ── */
+#initial-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 背景はカーテン要素が担うため transparent */
+  background: transparent;
+  pointer-events: all;
+  overflow: hidden;
+}
+
+.il-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* カーテン(z-index:1)より前面に出す */
+  z-index: 2;
+}
+
+.il-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: ilSlideIn .7s cubic-bezier(.34,1.56,.64,1) .1s forwards;
+}
+
+.il-logo-bracket {
+  font-family: 'Courier New', monospace;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--clr-accent), var(--clr-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.il-logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 2.5vw, 22px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: .12em;
+}
+
+.il-counter {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(64px, 14vw, 120px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,.2);
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: ilFadeIn .5s var(--ease) .4s forwards;
+  min-width: 3ch;
+  text-align: center;
+}
+
+.il-bar-wrap {
+  width: clamp(200px, 38vw, 300px);
+  height: 1px;
+  background: rgba(255,255,255,.1);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  opacity: 0;
+  animation: ilFadeIn .5s var(--ease) .5s forwards;
+}
+
+.il-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--clr-accent), var(--clr-purple));
+  border-radius: var(--radius-full);
+  transition: width .08s linear;
+}
+
+.il-loading-label {
+  margin-top: 14px;
+  font-size: 10px;
+  letter-spacing: .25em;
+  color: rgba(255,255,255,.25);
+  text-transform: uppercase;
+  opacity: 0;
+  animation: ilFadeIn .5s var(--ease) .6s forwards;
+}
+
+/* カーテン退場アニメーション */
+.il-curtain {
+  position: absolute;
+  left: 0; right: 0;
+  background: var(--clr-primary);
+  /* コンテンツ(z-index:2)より背面 */
+  z-index: 1;
+  will-change: transform;
+}
+.il-curtain-top    { top: 0; height: 50%; transform-origin: top; }
+.il-curtain-bottom { bottom: 0; height: 50%; transform-origin: bottom; }
+
+#initial-loader.is-leaving .il-curtain-top {
+  animation: ilCurtainUp .75s cubic-bezier(.76,0,.24,1) forwards;
+}
+#initial-loader.is-leaving .il-curtain-bottom {
+  animation: ilCurtainDown .75s cubic-bezier(.76,0,.24,1) forwards;
+}
+#initial-loader.is-leaving .il-content {
+  animation: ilContentFade .25s var(--ease) forwards;
+}
+/* カーテンが全て退場したらローダー本体も消す */
+#initial-loader.is-leaving {
+  animation: ilLoaderHide .1s linear .75s forwards;
+}
+@keyframes ilLoaderHide {
+  to { visibility: hidden; }
+}
+
+@keyframes ilSlideIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ilFadeIn {
+  to { opacity: 1; }
+}
+@keyframes ilCurtainUp {
+  to { transform: translateY(-100%); }
+}
+@keyframes ilCurtainDown {
+  to { transform: translateY(100%); }
+}
+@keyframes ilContentFade {
+  to { opacity: 0; }
+}
+
+/* ── ページ遷移オーバーレイ ── */
+#page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.pt-panel {
+  position: absolute;
+  inset: 0;
+  background: var(--clr-primary);
+  transform: translateY(100%);
+  will-change: transform;
+}
+
+/* 入場（現在のページから離れる） */
+#page-transition.is-entering .pt-panel {
+  pointer-events: all;
+  animation: ptSlideIn .45s cubic-bezier(.76,0,.24,1) forwards;
+}
+
+/* 退場（新しいページに入る） */
+#page-transition.is-leaving .pt-panel {
+  transform: translateY(0);
+  animation: ptSlideOut .55s cubic-bezier(.76,0,.24,1) forwards;
+}
+
+@keyframes ptSlideIn {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+@keyframes ptSlideOut {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-100%); }
+}
+
+/* ローダー表示中はスクロール禁止 */
+body.loader-active {
+  overflow: hidden;
+}
+
+/* 初回以外はローダーをCSSレベルで即非表示 */
+html.no-loader #initial-loader {
+  display: none !important;
+}
+

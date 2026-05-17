@@ -412,23 +412,12 @@
   /* =====================================================
      11. ページトップへスクロール時のヒーロー演出
   ===================================================== */
-  // ヒーローのコンテンツがロード直後に表示されるよう促す
   window.addEventListener('load', () => {
     document.body.classList.add('loaded');
-
-    // ヒーロー要素を少し遅れてアニメーション
     const heroContent = $('.hero-content');
     const heroVisual  = $('.hero-visual');
-    if (heroContent) {
-      setTimeout(() => {
-        heroContent.classList.add('is-visible');
-      }, 200);
-    }
-    if (heroVisual) {
-      setTimeout(() => {
-        heroVisual.classList.add('is-visible');
-      }, 450);
-    }
+    if (heroContent) setTimeout(() => heroContent.classList.add('is-visible'), 200);
+    if (heroVisual)  setTimeout(() => heroVisual.classList.add('is-visible'),  450);
   });
 
   /* =====================================================
@@ -443,29 +432,8 @@
   }
 
   /* =====================================================
-     13. ページ遷移フェード（オプション）
+     13. ページ遷移 → initPageTransition() IIFE に移譲
   ===================================================== */
-  document.querySelectorAll('a[href]:not([href^="#"]):not([href^="mailto"]):not([href^="tel"])').forEach(link => {
-    link.addEventListener('click', e => {
-      const href = link.getAttribute('href');
-      // 外部リンクは除外
-      if (href.startsWith('http') || href.startsWith('//')) return;
-      // ページ内リンクは除外
-      if (link.hostname !== window.location.hostname) return;
-
-      e.preventDefault();
-      document.body.style.transition = 'opacity .3s ease';
-      document.body.style.opacity = '0';
-      setTimeout(() => { window.location.href = href; }, 300);
-    });
-  });
-
-  // ページロード時にフェードイン
-  document.body.style.opacity = '0';
-  document.body.style.transition = 'opacity .4s ease';
-  requestAnimationFrame(() => {
-    document.body.style.opacity = '1';
-  });
 
   /* =====================================================
      14. コードウィンドウ タイピングエフェクト（TOPページ）
@@ -1088,6 +1056,146 @@
 
 
 /* =====================================================
+   ローディングアニメーション
+   1. 初回ロード: フルスクリーンカーテンローダー（HTML は各ページに直接記述）
+   2. ページ遷移: スライドオーバーレイ
+===================================================== */
+(function () {
+  'use strict';
+
+  const SESSION_KEY = 'pf_visited';
+  const TRANSIT_KEY = 'pf_transition';
+
+  /* ---- ページ遷移オーバーレイを注入 ---- */
+  const ptEl = document.createElement('div');
+  ptEl.id = 'page-transition';
+  ptEl.innerHTML = '<div class="pt-panel"></div>';
+  document.body.appendChild(ptEl);
+
+  const isFirstVisit  = !sessionStorage.getItem(SESSION_KEY);
+  const hasTransition = sessionStorage.getItem(TRANSIT_KEY);
+
+  /* ========================================================
+     ページ遷移: 新ページ到着時にオーバーレイを退場させる
+  ======================================================== */
+  if (hasTransition) {
+    sessionStorage.removeItem(TRANSIT_KEY);
+    const panel = ptEl.querySelector('.pt-panel');
+    panel.style.transform  = 'translateY(0)';
+    panel.style.transition = 'none';
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        panel.style.transform  = '';
+        panel.style.transition = '';
+        ptEl.classList.add('is-leaving');
+      });
+    });
+  }
+
+  /* ========================================================
+     内部リンククリック時にページ遷移アニメーションを起動
+  ======================================================== */
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+
+    const raw  = link.getAttribute('href') || '';
+    const href = link.href;
+
+    if (
+      raw.startsWith('#') ||
+      raw.startsWith('mailto:') ||
+      raw.startsWith('tel:') ||
+      (link.hostname && link.hostname !== location.hostname)
+    ) return;
+
+    if (ptEl.classList.contains('is-entering')) return;
+
+    e.preventDefault();
+    sessionStorage.setItem(TRANSIT_KEY, '1');
+    ptEl.classList.add('is-entering');
+
+    setTimeout(function () {
+      window.location.href = href;
+    }, 480);
+  }, true);
+
+  /* ========================================================
+     初回訪問: フルスクリーンローダーのアニメーション制御
+     （HTMLは各ページの <body> 先頭に直接記述済み）
+  ======================================================== */
+  const ilEl     = document.getElementById('initial-loader');
+  const counterEl = document.getElementById('ilCounter');
+  const barFill   = document.getElementById('ilBarFill');
+
+  /* ローダー要素が存在しない、または初回以外は何もしない */
+  if (!ilEl || !counterEl || !barFill || !isFirstVisit) return;
+
+  sessionStorage.setItem(SESSION_KEY, '1');
+  document.body.classList.add('loader-active');
+
+  let progress = 0;
+  let loadDone = false;
+  let animDone = false;
+  const MIN_DURATION = 2400;
+  let startTime = 0;
+  let rafId;
+
+  function tick(now) {
+    if (!startTime) startTime = now;
+    const elapsed = now - startTime;
+    const t       = Math.min(elapsed / MIN_DURATION, 1);
+    const eased   = t < .5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+    const target  = loadDone ? 100 : Math.floor(eased * 95);
+
+    if (progress < target) {
+      progress = target;
+      counterEl.textContent = progress;
+      barFill.style.width   = progress + '%';
+    }
+
+    if (progress >= 100) { finish(); return; }
+    rafId = requestAnimationFrame(tick);
+  }
+
+  function pushToHundred() {
+    if (progress >= 100) { finish(); return; }
+    progress++;
+    counterEl.textContent = progress;
+    barFill.style.width   = progress + '%';
+    if (progress < 100) setTimeout(pushToHundred, 18);
+    else finish();
+  }
+
+  function finish() {
+    if (animDone) return;
+    animDone = true;
+    cancelAnimationFrame(rafId);
+    counterEl.textContent = '100';
+    barFill.style.width   = '100%';
+
+    setTimeout(function () {
+      ilEl.classList.add('is-leaving');
+      document.body.classList.remove('loader-active');
+      setTimeout(function () {
+        if (ilEl.parentNode) ilEl.parentNode.removeChild(ilEl);
+      }, 900);
+    }, 300);
+  }
+
+  window.addEventListener('load', function () {
+    loadDone = true;
+    cancelAnimationFrame(rafId);
+    pushToHundred();
+  });
+
+  setTimeout(function () {
+    rafId = requestAnimationFrame(tick);
+  }, 600);
+
+})();
+
+/* =====================================================
    スクロールプログレスバー CSS (JS インジェクト)
 ===================================================== */
 (function injectStyles() {
@@ -1119,3 +1227,4 @@
   `;
   document.head.appendChild(s);
 })();
+

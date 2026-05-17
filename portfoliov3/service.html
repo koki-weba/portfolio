@@ -10,8 +10,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>if(sessionStorage.getItem('pf_visited'))document.documentElement.classList.add('no-loader');</script>
 </head>
 <body class="page-service">
+
+  <!-- ============================
+       INITIAL LOADER
+  ============================= -->
+  <div id="initial-loader">
+    <div class="il-curtain il-curtain-top"></div>
+    <div class="il-curtain il-curtain-bottom"></div>
+    <div class="il-content">
+      <div class="il-logo">
+        <span class="il-logo-bracket">&lt;/&gt;</span>
+        <span class="il-logo-text">KOKI PORTFOLIO</span>
+      </div>
+      <div class="il-counter" id="ilCounter">0</div>
+      <div class="il-bar-wrap"><div class="il-bar-fill" id="ilBarFill"></div></div>
+      <p class="il-loading-label">Loading</p>
+    </div>
+  </div>
 
   <!-- ============================
        HEADER
