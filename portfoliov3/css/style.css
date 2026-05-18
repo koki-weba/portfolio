@@ -1606,8 +1606,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 24px;
   position: relative;
 }
-.naturely-bg  { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
-.focusflow-bg { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); }
+.aoi-bg  { background: linear-gradient(135deg, #e8ede4 0%, #c5d4bc 50%, #a8b89e 100%); }
+.kuro-bg { background: linear-gradient(135deg, #0a0a0a 0%, #1a1410 50%, #2c1810 100%); }
+
+.mockup-aoi { background: #f7f5f0; }
+.mockup-tagline-aoi {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a5c44;
+  letter-spacing: .08em;
+}
+.mockup-phone-aoi .mockup-phone-inner {
+  background: rgba(197, 212, 188, .5);
+}
+
+.mockup-kuro { background: #111; }
+.mockup-bar-dark { background: rgba(255,255,255,.06); border-bottom-color: rgba(255,255,255,.08); }
+.m-dot-light { background: rgba(255,255,255,.25); }
+.mockup-tagline-kuro {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5f0e8;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
 
 .mockup-screen {
   background: #fff;
